@@ -1,0 +1,161 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Appearance inheritance ladder"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "section-0",
+        "name": "Object",
+        "start": 0,
+        "duration": 3840,
+        "role": "verse"
+      },
+      {
+        "id": "section-1",
+        "name": "Custom",
+        "start": 3840,
+        "duration": 3840,
+        "role": "verse"
+      },
+      {
+        "id": "section-2",
+        "name": "Base role",
+        "start": 7680,
+        "duration": 3840,
+        "role": "verse"
+      },
+      {
+        "id": "section-3",
+        "name": "Core role",
+        "start": 11520,
+        "duration": 3840,
+        "role": "verse"
+      },
+      {
+        "id": "section-4",
+        "name": "Host default",
+        "start": 15360,
+        "duration": 3840,
+        "role": "unmapped-role"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "track-colored",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "clip-colored",
+          "start": 0,
+          "duration": 3840,
+          "notes": [
+            {
+              "id": "note-explicit",
+              "start": 0,
+              "duration": 720,
+              "pitch": 60
+            },
+            {
+              "id": "note-inherit",
+              "start": 960,
+              "duration": 720,
+              "pitch": 64
+            }
+          ]
+        }
+      ],
+      "role": "melody"
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.appearance.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "roleDefinitions": [
+          {
+            "id": "role-custom",
+            "name": "Custom role",
+            "baseRole": "chorus"
+          },
+          {
+            "id": "role-base",
+            "name": "Base only",
+            "baseRole": "chorus"
+          }
+        ],
+        "sectionRoleAssignments": {
+          "section-0": "role-custom",
+          "section-1": "role-custom",
+          "section-2": "role-base"
+        },
+        "appearance": {
+          "roleColors": {
+            "verse": "#112233",
+            "chorus": "#445566",
+            "melody": "#778899"
+          },
+          "customRoleColors": {
+            "role-custom": "#AABBCC"
+          },
+          "objectColors": [
+            {
+              "target": {
+                "type": "section",
+                "id": "section-0"
+              },
+              "color": "#FF0000"
+            },
+            {
+              "target": {
+                "type": "clip",
+                "id": "clip-colored"
+              },
+              "color": "#00FF00"
+            },
+            {
+              "target": {
+                "type": "note",
+                "id": "note-explicit"
+              },
+              "color": "#0000FF"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

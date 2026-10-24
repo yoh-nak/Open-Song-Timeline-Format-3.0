@@ -1,0 +1,58 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960000,
+  "song": {
+    "title": "Maximum PPQ with a fractional positive tempo"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 0.125
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 64,
+        "denominator": 64
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "track-ppq-max",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "clip-ppq-max",
+          "start": 0,
+          "duration": 960000,
+          "notes": [
+            {
+              "id": "ppq-max-a",
+              "start": 0,
+              "duration": 960000,
+              "pitch": 60
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

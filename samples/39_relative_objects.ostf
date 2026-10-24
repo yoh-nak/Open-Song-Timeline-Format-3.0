@@ -1,0 +1,145 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Relative assignments with explicit object dependencies"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "chord-c",
+        "start": 0,
+        "duration": 3840,
+        "label": "C",
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ]
+      }
+    ],
+    "scales": [
+      {
+        "id": "scale-c",
+        "start": 0,
+        "duration": 3840,
+        "tonic": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ]
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "track-relative",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "clip-relative",
+          "start": 0,
+          "duration": 3840,
+          "notes": [
+            {
+              "id": "note-e",
+              "start": 0,
+              "duration": 720,
+              "pitch": 64
+            },
+            {
+              "id": "note-d",
+              "start": 960,
+              "duration": 720,
+              "pitch": 62
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.relative-phrase.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "objects",
+        "refs": [
+          {
+            "type": "note",
+            "id": "note-e"
+          },
+          {
+            "type": "chord",
+            "id": "chord-c"
+          },
+          {
+            "type": "note",
+            "id": "note-d"
+          },
+          {
+            "type": "scale",
+            "id": "scale-c"
+          }
+        ]
+      },
+      "data": {
+        "assignments": [
+          {
+            "noteId": "note-e",
+            "basis": "chordTone",
+            "contextId": "chord-c",
+            "anchorPitch": 60,
+            "index": 2,
+            "chromaticOffset": 0
+          },
+          {
+            "noteId": "note-d",
+            "basis": "scaleDegree",
+            "contextId": "scale-c",
+            "anchorPitch": 60,
+            "index": 2,
+            "chromaticOffset": 0
+          }
+        ]
+      }
+    }
+  }
+}

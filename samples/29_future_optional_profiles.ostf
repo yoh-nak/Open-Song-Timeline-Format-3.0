@@ -1,0 +1,107 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Future phrase and choice layouts remain opaque"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "phrase-track",
+      "name": "Phrase lead",
+      "clips": [
+        {
+          "id": "phrase-clip",
+          "start": 960,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "phrase-a0",
+              "start": -120,
+              "duration": 240,
+              "pitch": 62
+            },
+            {
+              "id": "phrase-b0",
+              "start": 720,
+              "duration": 480,
+              "pitch": 66
+            },
+            {
+              "id": "phrase-a1",
+              "start": 840,
+              "duration": 240,
+              "pitch": 62
+            },
+            {
+              "id": "phrase-b1",
+              "start": 1680,
+              "duration": 480,
+              "pitch": 66
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.phrase-library.v1": {
+      "version": "2.0.0-preview",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "laterLayout": {
+          "id": "phrase-track",
+          "unknown": [
+            1,
+            2
+          ]
+        }
+      }
+    },
+    "org.ostf.clip-choices.v1": {
+      "version": "2.0.0-preview",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": [
+        "future",
+        "choice",
+        {
+          "selected": "not-a-core-id"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Empty template with the largest finite repeat count"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "track-empty-template",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "clip-empty-template",
+          "start": 0,
+          "duration": 9007199254740991,
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.phrase-library.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "templates": [
+          {
+            "id": "template-empty",
+            "name": "Empty period",
+            "duration": 1,
+            "notes": []
+          }
+        ],
+        "instances": [
+          {
+            "id": "instance-empty",
+            "templateId": "template-empty",
+            "clipId": "clip-empty-template",
+            "repeatCount": 9007199254740991,
+            "transpose": 0,
+            "noteMap": []
+          }
+        ]
+      }
+    }
+  }
+}

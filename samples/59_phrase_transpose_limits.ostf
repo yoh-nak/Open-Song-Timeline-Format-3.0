@@ -1,0 +1,139 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Extreme legal transposition with resulting pitches in range"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "track-extremes",
+      "name": "Transpose endpoints",
+      "clips": [
+        {
+          "id": "clip-up",
+          "start": 0,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "note-up",
+              "start": 0,
+              "duration": 720,
+              "pitch": 127
+            }
+          ]
+        },
+        {
+          "id": "clip-down",
+          "start": 960,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "note-down",
+              "start": 0,
+              "duration": 720,
+              "pitch": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.phrase-library.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "templates": [
+          {
+            "id": "template-low",
+            "name": "Lowest source",
+            "duration": 960,
+            "notes": [
+              {
+                "id": "local",
+                "start": 0,
+                "duration": 720,
+                "pitch": 0
+              }
+            ]
+          },
+          {
+            "id": "template-high",
+            "name": "Highest source",
+            "duration": 960,
+            "notes": [
+              {
+                "id": "local",
+                "start": 0,
+                "duration": 720,
+                "pitch": 127
+              }
+            ]
+          }
+        ],
+        "instances": [
+          {
+            "id": "instance-up",
+            "templateId": "template-low",
+            "clipId": "clip-up",
+            "repeatCount": 1,
+            "transpose": 127,
+            "noteMap": [
+              {
+                "templateNoteId": "local",
+                "repeatIndex": 0,
+                "noteId": "note-up"
+              }
+            ]
+          },
+          {
+            "id": "instance-down",
+            "templateId": "template-high",
+            "clipId": "clip-down",
+            "repeatCount": 1,
+            "transpose": -127,
+            "noteMap": [
+              {
+                "templateNoteId": "local",
+                "repeatIndex": 0,
+                "noteId": "note-down"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

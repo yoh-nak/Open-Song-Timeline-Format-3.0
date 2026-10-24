@@ -1,0 +1,340 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Linked phrase editing study",
+    "primaryMelodyTrackId": "lead-track"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "revision-section",
+        "name": "Verse",
+        "role": "verse",
+        "start": 960,
+        "duration": 3840
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "revision-chord",
+        "label": "C",
+        "start": 960,
+        "duration": 3840,
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ]
+      }
+    ],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "lead-track",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "linked-a",
+          "start": 960,
+          "duration": 2880,
+          "notes": [
+            {
+              "id": "custom-a0",
+              "start": 0,
+              "duration": 480,
+              "pitch": 62
+            },
+            {
+              "id": "custom-b0",
+              "start": 1200,
+              "duration": 600,
+              "pitch": 65
+            },
+            {
+              "id": "custom-a1",
+              "start": 1440,
+              "duration": 480,
+              "pitch": 62
+            },
+            {
+              "id": "note.3be7fa1666c5ba3877143ac132c8fc747392b0865f1590e6bf9894bc402d88ea",
+              "start": 1560,
+              "duration": 120,
+              "soundSlotId": "revision-slot"
+            },
+            {
+              "id": "custom-b1",
+              "start": 2640,
+              "duration": 600,
+              "pitch": 65
+            },
+            {
+              "id": "note.ac95290e3719dfb5985ee1deca09e6ef0dd150a9d1a822f721f6b8f3e13ae3f9",
+              "start": 3000,
+              "duration": 120,
+              "soundSlotId": "revision-slot"
+            }
+          ],
+          "name": "First placement",
+          "enabled": true
+        }
+      ],
+      "role": "melody",
+      "instrument": {
+        "name": "Piano"
+      }
+    },
+    {
+      "id": "upper-track",
+      "name": "Muted upper placement",
+      "clips": [
+        {
+          "id": "linked-b",
+          "start": 4800,
+          "duration": 1440,
+          "notes": [
+            {
+              "id": "custom-upper-a0",
+              "start": 0,
+              "duration": 480,
+              "pitch": 74
+            },
+            {
+              "id": "custom-upper-b0",
+              "start": 1200,
+              "duration": 600,
+              "pitch": 77
+            },
+            {
+              "id": "note.8315a76be8c13a2849c5d55af4e547a3d12f36990960b30d2944fe2d88051b3b",
+              "start": 1560,
+              "duration": 120,
+              "soundSlotId": "revision-slot"
+            }
+          ],
+          "name": "Second placement",
+          "enabled": true
+        }
+      ],
+      "enabled": false,
+      "role": "countermelody"
+    },
+    {
+      "id": "unrelated-track",
+      "name": "Unrelated bass",
+      "clips": [
+        {
+          "id": "unrelated-clip",
+          "start": 3840,
+          "duration": 480,
+          "notes": [
+            {
+              "id": "unrelated-note",
+              "start": 0,
+              "duration": 120,
+              "pitch": 48
+            }
+          ],
+          "name": "Keep this placement"
+        }
+      ],
+      "role": "bass"
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "revision-slot",
+      "name": "Brush tap",
+      "role": "brush",
+      "midiNote": 38
+    }
+  ],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "revision-lyrics",
+        "language": "ja",
+        "title": "Lyric identity example"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "revision-phrase",
+        "documentId": "revision-lyrics",
+        "text": "光"
+      }
+    ],
+    "units": [
+      {
+        "id": "revision-unit",
+        "phraseId": "revision-phrase",
+        "text": "ひかり"
+      }
+    ],
+    "alignments": [
+      {
+        "id": "keep-alignment",
+        "unitIds": [
+          "revision-unit"
+        ],
+        "noteIds": [
+          "custom-a0",
+          "unrelated-note"
+        ]
+      }
+    ]
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.phrase-library.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "templates": [
+          {
+            "id": "editable-template",
+            "name": "Expanded phrase with a late brush tap",
+            "duration": 1440,
+            "notes": [
+              {
+                "id": "a",
+                "start": 0,
+                "duration": 480,
+                "pitch": 62
+              },
+              {
+                "id": "b",
+                "start": 1200,
+                "duration": 600,
+                "pitch": 65
+              },
+              {
+                "id": "c",
+                "start": 1560,
+                "duration": 120,
+                "soundSlotId": "revision-slot"
+              }
+            ]
+          },
+          {
+            "id": "untouched-template",
+            "name": "Unrelated source",
+            "duration": 480,
+            "notes": [
+              {
+                "id": "a",
+                "start": 0,
+                "duration": 120,
+                "pitch": 48
+              }
+            ]
+          }
+        ],
+        "instances": [
+          {
+            "id": "linked-instance-a",
+            "templateId": "editable-template",
+            "clipId": "linked-a",
+            "repeatCount": 2,
+            "transpose": 0,
+            "noteMap": [
+              {
+                "templateNoteId": "a",
+                "repeatIndex": 0,
+                "noteId": "custom-a0"
+              },
+              {
+                "templateNoteId": "b",
+                "repeatIndex": 0,
+                "noteId": "custom-b0"
+              },
+              {
+                "templateNoteId": "c",
+                "repeatIndex": 0,
+                "noteId": "note.3be7fa1666c5ba3877143ac132c8fc747392b0865f1590e6bf9894bc402d88ea"
+              },
+              {
+                "templateNoteId": "a",
+                "repeatIndex": 1,
+                "noteId": "custom-a1"
+              },
+              {
+                "templateNoteId": "b",
+                "repeatIndex": 1,
+                "noteId": "custom-b1"
+              },
+              {
+                "templateNoteId": "c",
+                "repeatIndex": 1,
+                "noteId": "note.ac95290e3719dfb5985ee1deca09e6ef0dd150a9d1a822f721f6b8f3e13ae3f9"
+              }
+            ]
+          },
+          {
+            "id": "unrelated-instance",
+            "templateId": "untouched-template",
+            "clipId": "unrelated-clip",
+            "repeatCount": 1,
+            "transpose": 0,
+            "noteMap": [
+              {
+                "templateNoteId": "a",
+                "repeatIndex": 0,
+                "noteId": "unrelated-note"
+              }
+            ]
+          },
+          {
+            "id": "linked-instance-b",
+            "templateId": "editable-template",
+            "clipId": "linked-b",
+            "repeatCount": 1,
+            "transpose": 12,
+            "noteMap": [
+              {
+                "templateNoteId": "a",
+                "repeatIndex": 0,
+                "noteId": "custom-upper-a0"
+              },
+              {
+                "templateNoteId": "b",
+                "repeatIndex": 0,
+                "noteId": "custom-upper-b0"
+              },
+              {
+                "templateNoteId": "c",
+                "repeatIndex": 0,
+                "noteId": "note.8315a76be8c13a2849c5d55af4e547a3d12f36990960b30d2944fe2d88051b3b"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

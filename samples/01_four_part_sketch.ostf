@@ -1,0 +1,554 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "OSTF 3.0 Four Part Sketch",
+    "primaryMelodyTrackId": "track-lead"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "section-verse",
+        "name": "Verse",
+        "start": 0,
+        "duration": 7680,
+        "role": "verse"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "chord-cmaj7",
+        "start": 0,
+        "duration": 3840,
+        "label": "Cmaj7",
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7,
+          11
+        ]
+      },
+      {
+        "id": "chord-am7",
+        "start": 3840,
+        "duration": 3840,
+        "label": "Am7",
+        "root": {
+          "step": "A",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          3,
+          7,
+          10
+        ]
+      }
+    ],
+    "scales": [
+      {
+        "id": "scale-c-major",
+        "start": 0,
+        "duration": 7680,
+        "label": "C major",
+        "tonic": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ]
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "track-lead",
+      "name": "Lead",
+      "role": "melody",
+      "instrument": {
+        "name": "Voice"
+      },
+      "clips": [
+        {
+          "id": "clip-lead",
+          "name": "Vocal idea",
+          "start": 0,
+          "duration": 7680,
+          "notes": [
+            {
+              "id": "lead-c4",
+              "pitch": 60,
+              "start": 0,
+              "duration": 720
+            },
+            {
+              "id": "lead-e4",
+              "pitch": 64,
+              "start": 960,
+              "duration": 720
+            },
+            {
+              "id": "lead-g4",
+              "pitch": 67,
+              "start": 1920,
+              "duration": 1200
+            },
+            {
+              "id": "lead-a4",
+              "pitch": 69,
+              "start": 3840,
+              "duration": 4320
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "track-piano",
+      "name": "Piano",
+      "role": "harmony",
+      "instrument": {
+        "name": "Piano"
+      },
+      "clips": [
+        {
+          "id": "clip-piano",
+          "start": 0,
+          "duration": 7680,
+          "notes": [
+            {
+              "id": "piano-c-0",
+              "pitch": 48,
+              "start": 0,
+              "duration": 3000
+            },
+            {
+              "id": "piano-c-1",
+              "pitch": 55,
+              "start": 0,
+              "duration": 3000
+            },
+            {
+              "id": "piano-c-2",
+              "pitch": 59,
+              "start": 0,
+              "duration": 3000
+            },
+            {
+              "id": "piano-c-3",
+              "pitch": 64,
+              "start": 0,
+              "duration": 3000
+            },
+            {
+              "id": "piano-a-0",
+              "pitch": 45,
+              "start": 3840,
+              "duration": 3000
+            },
+            {
+              "id": "piano-a-1",
+              "pitch": 52,
+              "start": 3840,
+              "duration": 3000
+            },
+            {
+              "id": "piano-a-2",
+              "pitch": 55,
+              "start": 3840,
+              "duration": 3000
+            },
+            {
+              "id": "piano-a-3",
+              "pitch": 60,
+              "start": 3840,
+              "duration": 3000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "track-bass",
+      "name": "Bass",
+      "role": "bass",
+      "instrument": {
+        "name": "Bass Synth"
+      },
+      "clips": [
+        {
+          "id": "clip-bass",
+          "start": 0,
+          "duration": 7680,
+          "notes": [
+            {
+              "id": "bass-c2",
+              "pitch": 36,
+              "start": 0,
+              "duration": 1440
+            },
+            {
+              "id": "bass-g2",
+              "pitch": 43,
+              "start": 1920,
+              "duration": 1440
+            },
+            {
+              "id": "bass-a1",
+              "pitch": 33,
+              "start": 3840,
+              "duration": 1440
+            },
+            {
+              "id": "bass-e2",
+              "pitch": 40,
+              "start": 5760,
+              "duration": 1920
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "track-drums",
+      "name": "Drums",
+      "role": "percussion",
+      "clips": [
+        {
+          "id": "clip-drums",
+          "start": 0,
+          "duration": 7680,
+          "notes": [
+            {
+              "id": "drum-kick-1",
+              "soundSlotId": "slot-kick-a",
+              "start": 0,
+              "duration": 120
+            },
+            {
+              "id": "drum-snare-1",
+              "soundSlotId": "slot-snare",
+              "start": 960,
+              "duration": 120
+            },
+            {
+              "id": "drum-kick-2",
+              "soundSlotId": "slot-kick-b",
+              "start": 1920,
+              "duration": 120
+            },
+            {
+              "id": "drum-kick-3",
+              "soundSlotId": "slot-kick-a",
+              "start": 3840,
+              "duration": 120
+            },
+            {
+              "id": "drum-snare-2",
+              "soundSlotId": "slot-snare",
+              "start": 4800,
+              "duration": 120
+            },
+            {
+              "id": "drum-kick-4",
+              "soundSlotId": "slot-kick-b",
+              "start": 5760,
+              "duration": 120
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "slot-kick-a",
+      "name": "Kick A",
+      "role": "kick",
+      "midiNote": 36
+    },
+    {
+      "id": "slot-kick-b",
+      "name": "Kick B",
+      "role": "kick",
+      "midiNote": 24
+    },
+    {
+      "id": "slot-snare",
+      "name": "Snare",
+      "role": "snare",
+      "midiNote": 38
+    }
+  ],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "lyrics-ja",
+        "title": "光",
+        "language": "ja"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "phrase-light",
+        "documentId": "lyrics-ja",
+        "text": "光",
+        "pronunciation": "ひかり",
+        "start": 0,
+        "duration": 8160
+      }
+    ],
+    "units": [
+      {
+        "id": "unit-hi",
+        "phraseId": "phrase-light",
+        "text": "ひ",
+        "pronunciation": "ひ"
+      },
+      {
+        "id": "unit-ka",
+        "phraseId": "phrase-light",
+        "text": "か",
+        "pronunciation": "か"
+      },
+      {
+        "id": "unit-ri",
+        "phraseId": "phrase-light",
+        "text": "り",
+        "pronunciation": "り"
+      }
+    ],
+    "alignments": [
+      {
+        "id": "align-hi",
+        "unitIds": [
+          "unit-hi"
+        ],
+        "noteIds": [
+          "lead-c4"
+        ]
+      },
+      {
+        "id": "align-ka",
+        "unitIds": [
+          "unit-ka"
+        ],
+        "noteIds": [
+          "lead-e4"
+        ]
+      },
+      {
+        "id": "align-ri",
+        "unitIds": [
+          "unit-ri"
+        ],
+        "noteIds": [
+          "lead-g4",
+          "lead-a4"
+        ]
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "resource-rhythm",
+      "kind": "midi",
+      "uri": "urn:example:reference-rhythm",
+      "name": "Illustrative rhythm reference"
+    }
+  ],
+  "extensions": {
+    "org.ostf.relative-phrase.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "assignments": [
+          {
+            "noteId": "lead-e4",
+            "basis": "chordTone",
+            "contextId": "chord-cmaj7",
+            "anchorPitch": 60,
+            "index": 2,
+            "chromaticOffset": 0
+          },
+          {
+            "noteId": "bass-c2",
+            "basis": "chordTone",
+            "contextId": "chord-cmaj7",
+            "anchorPitch": 36,
+            "index": 1,
+            "chromaticOffset": 0
+          },
+          {
+            "noteId": "bass-g2",
+            "basis": "chordTone",
+            "contextId": "chord-cmaj7",
+            "anchorPitch": 36,
+            "index": 3,
+            "chromaticOffset": 0
+          },
+          {
+            "noteId": "bass-a1",
+            "basis": "chordTone",
+            "contextId": "chord-am7",
+            "anchorPitch": 33,
+            "index": 1,
+            "chromaticOffset": 0
+          },
+          {
+            "noteId": "bass-e2",
+            "basis": "chordTone",
+            "contextId": "chord-am7",
+            "anchorPitch": 33,
+            "index": 3,
+            "chromaticOffset": 0
+          }
+        ]
+      }
+    },
+    "org.ostf.generation-context.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "processes": [
+          {
+            "id": "process-bass",
+            "generator": {
+              "id": "org.example.bass-generator",
+              "version": "example-1"
+            },
+            "inputs": [
+              {
+                "role": "harmony",
+                "ref": {
+                  "type": "chord",
+                  "id": "chord-cmaj7"
+                }
+              },
+              {
+                "role": "harmony",
+                "ref": {
+                  "type": "chord",
+                  "id": "chord-am7"
+                }
+              },
+              {
+                "role": "rhythm",
+                "ref": {
+                  "type": "resource",
+                  "id": "resource-rhythm"
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "type": "clip",
+                "id": "clip-bass"
+              }
+            ],
+            "targetRange": {
+              "start": 0,
+              "duration": 7680
+            },
+            "protectedNoteIds": [
+              "bass-c2"
+            ],
+            "vendorExtension": "com.example.generator-state.v1"
+          }
+        ]
+      }
+    },
+    "org.ostf.appearance.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "roleDefinitions": [
+          {
+            "id": "role-verse",
+            "name": "Verse",
+            "baseRole": "verse"
+          }
+        ],
+        "sectionRoleAssignments": {
+          "section-verse": "role-verse"
+        },
+        "appearance": {
+          "roleColors": {
+            "verse": "#557799",
+            "melody": "#A358D1",
+            "harmony": "#D19238",
+            "bass": "#277DA8",
+            "percussion": "#667788"
+          },
+          "customRoleColors": {
+            "role-verse": "#128C7E"
+          },
+          "objectColors": [
+            {
+              "target": {
+                "type": "clip",
+                "id": "clip-bass"
+              },
+              "color": "#2255AA"
+            }
+          ]
+        }
+      }
+    },
+    "com.example.generator-state.v1": {
+      "version": "example-1",
+      "status": "current",
+      "dependencies": {
+        "scope": "objects",
+        "refs": [
+          {
+            "type": "clip",
+            "id": "clip-bass"
+          }
+        ]
+      },
+      "data": {
+        "preset": "Illustrative preset",
+        "seed": 17,
+        "complexity": 0.4
+      }
+    }
+  }
+}
+

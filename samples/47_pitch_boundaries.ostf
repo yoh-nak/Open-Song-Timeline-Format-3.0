@@ -1,0 +1,75 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Core pitch endpoints"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "track-pitch-range",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "clip-pitch-range",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "pitch-min",
+              "start": 0,
+              "duration": 1,
+              "pitch": 0
+            },
+            {
+              "id": "pitch-max",
+              "start": 960,
+              "duration": 1,
+              "pitch": 127
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "slot-low-hint",
+      "name": "Lowest MIDI output hint",
+      "midiNote": 0
+    },
+    {
+      "id": "slot-high-hint",
+      "name": "Highest MIDI output hint",
+      "midiNote": 127
+    }
+  ],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

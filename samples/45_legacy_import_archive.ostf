@@ -1,0 +1,67 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Preserved OSTF 2.3 source archive — authored example"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.legacy-import.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "unverified",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "sourceVersion": "2.3.0",
+        "sourceSha256": "cf8a24d487c7f09b390f946839cb08d08be7d566428dda12ec556326240bca64",
+        "sourceText": "{\n  \"format\": \"OSTF\",\n  \"version\": \"2.3.0\",\n  \"ppq\": 960,\n  \"song\": {\n    \"title\": \"Composite song with roles colors chords melody lyrics\"\n  },\n  \"timeline\": {\n    \"sections\": [\n      {\n        \"id\": \"s1\",\n        \"name\": \"Intro\",\n        \"start\": 0,\n        \"duration\": 15360,\n        \"role\": \"intro\"\n      },\n      {\n        \"id\": \"s2\",\n        \"name\": \"Verse\",\n        \"start\": 15360,\n        \"duration\": 15360,\n        \"role\": \"other\"\n      },\n      {\n        \"id\": \"s3\",\n        \"name\": \"Chorus\",\n        \"start\": 30720,\n        \"duration\": 15360,\n        \"role\": \"other\"\n      }\n    ],\n    \"tempoChanges\": [\n      {\n        \"at\": 0,\n        \"bpm\": 120\n      }\n    ],\n    \"meterChanges\": [\n      {\n        \"at\": 0,\n        \"numerator\": 4,\n        \"denominator\": 4\n      }\n    ]\n  },\n  \"harmony\": {\n    \"chords\": [\n      {\n        \"id\": \"chord1\",\n        \"start\": 0,\n        \"duration\": 1920,\n        \"symbol\": \"Am7\"\n      },\n      {\n        \"id\": \"chord2\",\n        \"start\": 1920,\n        \"duration\": 1920,\n        \"symbol\": \"D7\"\n      },\n      {\n        \"id\": \"chord3\",\n        \"start\": 3840,\n        \"duration\": 1920,\n        \"symbol\": \"Gmaj7\"\n      },\n      {\n        \"id\": \"chord4\",\n        \"start\": 5760,\n        \"duration\": 1920,\n        \"symbol\": \"Cmaj7\"\n      }\n    ]\n  },\n  \"melodies\": [\n    {\n      \"id\": \"lead\",\n      \"name\": \"Lead\",\n      \"clips\": [\n        {\n          \"id\": \"melody1\",\n          \"start\": 0,\n          \"duration\": 1920,\n          \"notes\": [\n            {\n              \"pitch\": 60,\n              \"start\": 0,\n              \"duration\": 480\n            }\n          ]\n        },\n        {\n          \"id\": \"melody2\",\n          \"start\": 1920,\n          \"duration\": 1920,\n          \"notes\": [\n            {\n              \"pitch\": 61,\n              \"start\": 0,\n              \"duration\": 480\n            }\n          ]\n        }\n      ]\n    }\n  ],\n  \"lyrics\": {\n    \"documents\": [\n      {\n        \"id\": \"doc1\",\n        \"title\": \"Vocal draft\"\n      }\n    ],\n    \"phrases\": [\n      {\n        \"id\": \"p1\",\n        \"text\": \"Hello world\"\n      }\n    ],\n    \"units\": [\n      {\n        \"id\": \"u1\",\n        \"text\": \"Hello\"\n      }\n    ],\n    \"alignments\": [\n      {\n        \"id\": \"al1\",\n        \"phraseId\": \"p1\",\n        \"unitId\": \"u1\"\n      }\n    ]\n  },\n  \"extensions\": {\n    \"org.ostf.section-role-appearance.v1\": {\n      \"version\": \"1.0.0\",\n      \"data\": {\n        \"roleDefinitions\": [\n          {\n            \"id\": \"r.theme\",\n            \"name\": \"Theme\",\n            \"baseRole\": \"other\"\n          }\n        ],\n        \"sectionRoleAssignments\": {\n          \"s2\": \"r.theme\"\n        },\n        \"appearance\": {\n          \"roleColors\": {},\n          \"customRoleColors\": {},\n          \"objectColors\": [\n            {\n              \"targetType\": \"chordClip\",\n              \"targetId\": \"chord1\",\n              \"color\": \"#336699\"\n            }\n          ]\n        }\n      }\n    }\n  }\n}\n",
+        "conversionReport": {
+          "authoringMode": "archive-example-only",
+          "runtimeMigrationPerformed": false,
+          "converted": [],
+          "uninterpreted": [
+            {
+              "path": "/",
+              "reason": "Original 2.3 source retained; no musical conversion is claimed by this authored example."
+            }
+          ],
+          "assumptions": [],
+          "warnings": [
+            "Core music in this example is intentionally empty."
+          ],
+          "idMap": {}
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Parallel Japanese and English lyric documents",
+    "primaryMelodyTrackId": "track-vocal"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "track-vocal",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "clip-vocal",
+          "start": 0,
+          "duration": 3840,
+          "notes": [
+            {
+              "id": "vocal-a",
+              "start": 0,
+              "duration": 720,
+              "pitch": 60
+            },
+            {
+              "id": "vocal-b",
+              "start": 960,
+              "duration": 720,
+              "pitch": 64
+            },
+            {
+              "id": "vocal-c",
+              "start": 1920,
+              "duration": 1440,
+              "pitch": 67
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "document-ja",
+        "title": "光",
+        "language": "ja"
+      },
+      {
+        "id": "document-en",
+        "title": "Light",
+        "language": "en"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "phrase-ja",
+        "documentId": "document-ja",
+        "text": "光を",
+        "pronunciation": "ひかりを",
+        "start": 0,
+        "duration": 3360
+      },
+      {
+        "id": "phrase-en",
+        "documentId": "document-en",
+        "text": "See the light",
+        "pronunciation": "see the light"
+      }
+    ],
+    "units": [
+      {
+        "id": "unit-ja-a",
+        "phraseId": "phrase-ja",
+        "text": "光",
+        "pronunciation": "ひかり",
+        "start": 0,
+        "duration": 1680
+      },
+      {
+        "id": "unit-ja-b",
+        "phraseId": "phrase-ja",
+        "text": "を",
+        "pronunciation": "お",
+        "start": 1920,
+        "duration": 1440
+      },
+      {
+        "id": "unit-en-a",
+        "phraseId": "phrase-en",
+        "text": "See the",
+        "pronunciation": "see thuh"
+      },
+      {
+        "id": "unit-en-b",
+        "phraseId": "phrase-en",
+        "text": "light",
+        "pronunciation": "light"
+      }
+    ],
+    "alignments": [
+      {
+        "id": "align-ja-a",
+        "unitIds": [
+          "unit-ja-a"
+        ],
+        "noteIds": [
+          "vocal-a",
+          "vocal-b"
+        ]
+      },
+      {
+        "id": "align-ja-b",
+        "unitIds": [
+          "unit-ja-b"
+        ],
+        "noteIds": [
+          "vocal-c"
+        ]
+      },
+      {
+        "id": "align-en",
+        "unitIds": [
+          "unit-en-a",
+          "unit-en-b"
+        ],
+        "noteIds": [
+          "vocal-a",
+          "vocal-b",
+          "vocal-c"
+        ]
+      }
+    ]
+  },
+  "resources": [],
+  "extensions": {}
+}

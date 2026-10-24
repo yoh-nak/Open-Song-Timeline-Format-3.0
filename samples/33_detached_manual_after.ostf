@@ -1,0 +1,272 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Linked phrase editing study",
+    "primaryMelodyTrackId": "lead-track"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "revision-section",
+        "name": "Verse",
+        "role": "verse",
+        "start": 960,
+        "duration": 3840
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "revision-chord",
+        "label": "C",
+        "start": 960,
+        "duration": 3840,
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ]
+      }
+    ],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "lead-track",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "linked-a",
+          "start": 960,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "custom-a0",
+              "start": -100,
+              "duration": 300,
+              "pitch": 63
+            },
+            {
+              "id": "custom-b0",
+              "start": 720,
+              "duration": 480,
+              "pitch": 64
+            },
+            {
+              "id": "custom-a1",
+              "start": 840,
+              "duration": 240,
+              "pitch": 60
+            },
+            {
+              "id": "custom-b1",
+              "start": 1680,
+              "duration": 480,
+              "pitch": 64
+            }
+          ],
+          "name": "First placement",
+          "enabled": true
+        }
+      ],
+      "role": "melody",
+      "instrument": {
+        "name": "Piano"
+      }
+    },
+    {
+      "id": "upper-track",
+      "name": "Muted upper placement",
+      "clips": [
+        {
+          "id": "linked-b",
+          "start": 4800,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "custom-upper-a0",
+              "start": -120,
+              "duration": 240,
+              "pitch": 72
+            },
+            {
+              "id": "custom-upper-b0",
+              "start": 720,
+              "duration": 480,
+              "pitch": 76
+            }
+          ],
+          "name": "Second placement",
+          "enabled": true
+        }
+      ],
+      "enabled": false,
+      "role": "countermelody"
+    },
+    {
+      "id": "unrelated-track",
+      "name": "Unrelated bass",
+      "clips": [
+        {
+          "id": "unrelated-clip",
+          "start": 3840,
+          "duration": 480,
+          "notes": [
+            {
+              "id": "unrelated-note",
+              "start": 0,
+              "duration": 120,
+              "pitch": 48
+            }
+          ],
+          "name": "Keep this placement"
+        }
+      ],
+      "role": "bass"
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "revision-slot",
+      "name": "Brush tap",
+      "role": "brush",
+      "midiNote": 38
+    }
+  ],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "revision-lyrics",
+        "language": "ja",
+        "title": "Lyric identity example"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "revision-phrase",
+        "documentId": "revision-lyrics",
+        "text": "光"
+      }
+    ],
+    "units": [
+      {
+        "id": "revision-unit",
+        "phraseId": "revision-phrase",
+        "text": "ひかり"
+      }
+    ],
+    "alignments": [
+      {
+        "id": "keep-alignment",
+        "unitIds": [
+          "revision-unit"
+        ],
+        "noteIds": [
+          "custom-a0",
+          "unrelated-note"
+        ]
+      }
+    ]
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.phrase-library.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "stale",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "templates": [
+          {
+            "id": "editable-template",
+            "name": "Original pickup",
+            "duration": 960,
+            "notes": [
+              {
+                "id": "a",
+                "start": -120,
+                "duration": 240,
+                "pitch": 60
+              },
+              {
+                "id": "b",
+                "start": 720,
+                "duration": 480,
+                "pitch": 64
+              }
+            ]
+          },
+          {
+            "id": "untouched-template",
+            "name": "Unrelated source",
+            "duration": 480,
+            "notes": [
+              {
+                "id": "a",
+                "start": 0,
+                "duration": 120,
+                "pitch": 48
+              }
+            ]
+          }
+        ],
+        "instances": [
+          {
+            "id": "unrelated-instance",
+            "templateId": "untouched-template",
+            "clipId": "unrelated-clip",
+            "repeatCount": 1,
+            "transpose": 0,
+            "noteMap": [
+              {
+                "templateNoteId": "a",
+                "repeatIndex": 0,
+                "noteId": "unrelated-note"
+              }
+            ]
+          },
+          {
+            "id": "linked-instance-b",
+            "templateId": "editable-template",
+            "clipId": "linked-b",
+            "repeatCount": 1,
+            "transpose": 12,
+            "noteMap": [
+              {
+                "templateNoteId": "b",
+                "repeatIndex": 0,
+                "noteId": "custom-upper-b0"
+              },
+              {
+                "templateNoteId": "a",
+                "repeatIndex": 0,
+                "noteId": "custom-upper-a0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

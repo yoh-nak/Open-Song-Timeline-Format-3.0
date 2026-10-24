@@ -1,0 +1,92 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Only enabled content contributes to performance end"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "active-track",
+      "name": "Enabled",
+      "clips": [
+        {
+          "id": "active-clip",
+          "start": 0,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "active-note",
+              "start": 0,
+              "duration": 1440,
+              "pitch": 60
+            }
+          ]
+        },
+        {
+          "id": "muted-clip",
+          "start": 5000,
+          "duration": 1000,
+          "notes": [
+            {
+              "id": "muted-note",
+              "start": 0,
+              "duration": 1000,
+              "pitch": 65
+            }
+          ],
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "id": "muted-track",
+      "name": "Disabled",
+      "clips": [
+        {
+          "id": "muted-track-clip",
+          "start": 9000,
+          "duration": 1000,
+          "notes": [
+            {
+              "id": "muted-track-note",
+              "start": 0,
+              "duration": 1000,
+              "pitch": 67
+            }
+          ]
+        }
+      ],
+      "enabled": false
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

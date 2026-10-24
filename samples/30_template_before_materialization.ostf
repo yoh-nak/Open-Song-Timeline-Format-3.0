@@ -1,0 +1,76 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "A stored template before explicit materialization"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "target-track",
+      "name": "Materialization destination",
+      "clips": []
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.phrase-library.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "templates": [
+          {
+            "id": "pickup-template",
+            "name": "Pickup and tail",
+            "duration": 960,
+            "notes": [
+              {
+                "id": "a",
+                "start": -120,
+                "duration": 240,
+                "pitch": 60
+              },
+              {
+                "id": "b",
+                "start": 720,
+                "duration": 480,
+                "pitch": 64
+              }
+            ]
+          }
+        ],
+        "instances": []
+      }
+    }
+  }
+}

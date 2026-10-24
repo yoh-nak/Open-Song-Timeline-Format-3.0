@@ -1,0 +1,278 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "",
+    "primaryMelodyTrackId": "track-lead"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "section-verse",
+        "name": "Verse",
+        "start": 0,
+        "duration": 3840,
+        "role": ""
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 123.5
+      },
+      {
+        "at": 1920,
+        "bpm": 118
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "chord-c",
+        "start": 0,
+        "duration": 1920,
+        "label": "Cmaj7/E",
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7,
+          11
+        ],
+        "bass": {
+          "step": "E",
+          "alter": 0
+        }
+      },
+      {
+        "id": "chord-label",
+        "start": 1920,
+        "duration": 1920,
+        "label": "自由な和声ラベル",
+        "bass": {
+          "step": "G",
+          "alter": 0
+        }
+      }
+    ],
+    "scales": [
+      {
+        "id": "scale-c",
+        "start": 0,
+        "duration": 3840,
+        "label": "",
+        "tonic": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ]
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "track-lead",
+      "name": "",
+      "role": "",
+      "instrument": {
+        "name": "",
+        "family": ""
+      },
+      "enabled": true,
+      "clips": [
+        {
+          "id": "clip-lead",
+          "name": "",
+          "start": 0,
+          "duration": 3840,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-c",
+              "start": 0,
+              "duration": 720,
+              "pitch": 60
+            },
+            {
+              "id": "note-e",
+              "start": 960,
+              "duration": 720,
+              "pitch": 64
+            },
+            {
+              "id": "note-g",
+              "start": 1920,
+              "duration": 2400,
+              "pitch": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "track-drums",
+      "name": "",
+      "role": "",
+      "instrument": {
+        "name": "",
+        "family": ""
+      },
+      "enabled": true,
+      "clips": [
+        {
+          "id": "clip-drums",
+          "name": "",
+          "start": 0,
+          "duration": 3840,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-brush",
+              "start": 0,
+              "duration": 120,
+              "soundSlotId": "slot-brush"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "slot-brush",
+      "name": "",
+      "role": "",
+      "midiNote": 38
+    }
+  ],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "lyric-document",
+        "title": "",
+        "language": ""
+      }
+    ],
+    "phrases": [
+      {
+        "id": "lyric-phrase",
+        "documentId": "lyric-document",
+        "text": "",
+        "pronunciation": "",
+        "start": 0,
+        "duration": 4320
+      }
+    ],
+    "units": [
+      {
+        "id": "lyric-unit",
+        "phraseId": "lyric-phrase",
+        "text": "",
+        "pronunciation": "",
+        "start": 0,
+        "duration": 4320
+      }
+    ],
+    "alignments": [
+      {
+        "id": "lyric-alignment",
+        "unitIds": [
+          "lyric-unit"
+        ],
+        "noteIds": [
+          "note-c",
+          "note-e",
+          "note-g"
+        ]
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "resource-text",
+      "kind": "text",
+      "uri": "urn:example:empty-text",
+      "name": "",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "extensions": {
+    "org.ostf.relative-phrase.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "assignments": []
+      }
+    },
+    "org.ostf.generation-context.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "processes": []
+      }
+    },
+    "org.ostf.appearance.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "roleDefinitions": [],
+        "sectionRoleAssignments": {},
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": []
+        }
+      }
+    },
+    "org.ostf.phrase-library.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "templates": [],
+        "instances": []
+      }
+    },
+    "org.ostf.clip-choices.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "groups": []
+      }
+    }
+  }
+}

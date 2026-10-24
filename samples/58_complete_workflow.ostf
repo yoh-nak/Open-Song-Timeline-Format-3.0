@@ -1,0 +1,433 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Complete six-profile composition workflow — authored state",
+    "primaryMelodyTrackId": "track-lead"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "section-verse",
+        "name": "Verse",
+        "start": 0,
+        "duration": 3840,
+        "role": "verse"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 123.5
+      },
+      {
+        "at": 1920,
+        "bpm": 118
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "chord-c",
+        "start": 0,
+        "duration": 1920,
+        "label": "Cmaj7/E",
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7,
+          11
+        ],
+        "bass": {
+          "step": "E",
+          "alter": 0
+        }
+      },
+      {
+        "id": "chord-label",
+        "start": 1920,
+        "duration": 1920,
+        "label": "自由な和声ラベル",
+        "bass": {
+          "step": "G",
+          "alter": 0
+        }
+      }
+    ],
+    "scales": [
+      {
+        "id": "scale-c",
+        "start": 0,
+        "duration": 3840,
+        "label": "C major",
+        "tonic": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ]
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "track-lead",
+      "name": "Lead",
+      "role": "melody",
+      "instrument": {
+        "name": "Soft piano",
+        "family": "keyboard"
+      },
+      "enabled": true,
+      "clips": [
+        {
+          "id": "clip-lead",
+          "name": "Phrase A",
+          "start": 0,
+          "duration": 3840,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-c",
+              "start": 0,
+              "duration": 720,
+              "pitch": 60
+            },
+            {
+              "id": "note-e",
+              "start": 960,
+              "duration": 720,
+              "pitch": 64
+            },
+            {
+              "id": "note-g",
+              "start": 1920,
+              "duration": 2400,
+              "pitch": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "track-drums",
+      "name": "Brushes",
+      "role": "percussion",
+      "instrument": {
+        "name": "Brush kit",
+        "family": "drums"
+      },
+      "enabled": true,
+      "clips": [
+        {
+          "id": "clip-drums",
+          "name": "Brush hit",
+          "start": 0,
+          "duration": 3840,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-brush",
+              "start": 0,
+              "duration": 120,
+              "soundSlotId": "slot-brush"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "slot-brush",
+      "name": "Brush tap",
+      "role": "snare",
+      "midiNote": 38
+    }
+  ],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "lyric-document",
+        "title": "光",
+        "language": "ja"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "lyric-phrase",
+        "documentId": "lyric-document",
+        "text": "光",
+        "pronunciation": "ひかり",
+        "start": 0,
+        "duration": 4320
+      }
+    ],
+    "units": [
+      {
+        "id": "lyric-unit",
+        "phraseId": "lyric-phrase",
+        "text": "光",
+        "pronunciation": "ひかり",
+        "start": 0,
+        "duration": 4320
+      }
+    ],
+    "alignments": [
+      {
+        "id": "lyric-alignment",
+        "unitIds": [
+          "lyric-unit"
+        ],
+        "noteIds": [
+          "note-c",
+          "note-e",
+          "note-g"
+        ]
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "resource-text",
+      "kind": "text",
+      "uri": "urn:example:empty-text",
+      "name": "Empty source text",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "extensions": {
+    "org.ostf.relative-phrase.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "assignments": [
+          {
+            "noteId": "note-e",
+            "basis": "chordTone",
+            "contextId": "chord-c",
+            "anchorPitch": 60,
+            "index": 2,
+            "chromaticOffset": 0
+          }
+        ]
+      }
+    },
+    "org.ostf.generation-context.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "processes": [
+          {
+            "id": "workflow-process",
+            "generator": {
+              "id": "org.example.composer",
+              "version": "example-1"
+            },
+            "inputs": [
+              {
+                "role": "harmony",
+                "ref": {
+                  "type": "chord",
+                  "id": "chord-c"
+                },
+                "readRange": {
+                  "start": 0,
+                  "duration": 1920
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "type": "clip",
+                "id": "clip-lead"
+              }
+            ],
+            "targetRange": {
+              "start": 0,
+              "duration": 3840
+            },
+            "protectedNoteIds": [
+              "note-c"
+            ]
+          }
+        ]
+      }
+    },
+    "org.ostf.appearance.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "roleDefinitions": [
+          {
+            "id": "workflow-verse",
+            "name": "Verse",
+            "baseRole": "verse"
+          }
+        ],
+        "sectionRoleAssignments": {
+          "section-verse": "workflow-verse"
+        },
+        "appearance": {
+          "roleColors": {
+            "verse": "#445566",
+            "melody": "#AA7733"
+          },
+          "customRoleColors": {
+            "workflow-verse": "#227788"
+          },
+          "objectColors": []
+        }
+      }
+    },
+    "org.ostf.phrase-library.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "templates": [
+          {
+            "id": "workflow-template",
+            "name": "Melody source",
+            "duration": 3840,
+            "notes": [
+              {
+                "id": "source-c",
+                "start": 0,
+                "duration": 720,
+                "pitch": 60
+              },
+              {
+                "id": "source-e",
+                "start": 960,
+                "duration": 720,
+                "pitch": 64
+              },
+              {
+                "id": "source-g",
+                "start": 1920,
+                "duration": 2400,
+                "pitch": 67
+              }
+            ]
+          }
+        ],
+        "instances": [
+          {
+            "id": "workflow-instance",
+            "templateId": "workflow-template",
+            "clipId": "clip-lead",
+            "repeatCount": 1,
+            "transpose": 0,
+            "noteMap": [
+              {
+                "templateNoteId": "source-c",
+                "repeatIndex": 0,
+                "noteId": "note-c"
+              },
+              {
+                "templateNoteId": "source-e",
+                "repeatIndex": 0,
+                "noteId": "note-e"
+              },
+              {
+                "templateNoteId": "source-g",
+                "repeatIndex": 0,
+                "noteId": "note-g"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "org.ostf.clip-choices.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "groups": [
+          {
+            "id": "workflow-choice",
+            "name": "Lead entry",
+            "candidates": [
+              {
+                "id": "with-lead",
+                "name": "With lead",
+                "clipIds": [
+                  "clip-lead"
+                ]
+              },
+              {
+                "id": "without-lead",
+                "name": "Without lead",
+                "clipIds": []
+              }
+            ],
+            "selectedCandidateId": "with-lead"
+          }
+        ]
+      }
+    },
+    "org.ostf.legacy-import.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "unverified",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "sourceVersion": "2.3.0",
+        "sourceSha256": "cf8a24d487c7f09b390f946839cb08d08be7d566428dda12ec556326240bca64",
+        "sourceText": "{\n  \"format\": \"OSTF\",\n  \"version\": \"2.3.0\",\n  \"ppq\": 960,\n  \"song\": {\n    \"title\": \"Composite song with roles colors chords melody lyrics\"\n  },\n  \"timeline\": {\n    \"sections\": [\n      {\n        \"id\": \"s1\",\n        \"name\": \"Intro\",\n        \"start\": 0,\n        \"duration\": 15360,\n        \"role\": \"intro\"\n      },\n      {\n        \"id\": \"s2\",\n        \"name\": \"Verse\",\n        \"start\": 15360,\n        \"duration\": 15360,\n        \"role\": \"other\"\n      },\n      {\n        \"id\": \"s3\",\n        \"name\": \"Chorus\",\n        \"start\": 30720,\n        \"duration\": 15360,\n        \"role\": \"other\"\n      }\n    ],\n    \"tempoChanges\": [\n      {\n        \"at\": 0,\n        \"bpm\": 120\n      }\n    ],\n    \"meterChanges\": [\n      {\n        \"at\": 0,\n        \"numerator\": 4,\n        \"denominator\": 4\n      }\n    ]\n  },\n  \"harmony\": {\n    \"chords\": [\n      {\n        \"id\": \"chord1\",\n        \"start\": 0,\n        \"duration\": 1920,\n        \"symbol\": \"Am7\"\n      },\n      {\n        \"id\": \"chord2\",\n        \"start\": 1920,\n        \"duration\": 1920,\n        \"symbol\": \"D7\"\n      },\n      {\n        \"id\": \"chord3\",\n        \"start\": 3840,\n        \"duration\": 1920,\n        \"symbol\": \"Gmaj7\"\n      },\n      {\n        \"id\": \"chord4\",\n        \"start\": 5760,\n        \"duration\": 1920,\n        \"symbol\": \"Cmaj7\"\n      }\n    ]\n  },\n  \"melodies\": [\n    {\n      \"id\": \"lead\",\n      \"name\": \"Lead\",\n      \"clips\": [\n        {\n          \"id\": \"melody1\",\n          \"start\": 0,\n          \"duration\": 1920,\n          \"notes\": [\n            {\n              \"pitch\": 60,\n              \"start\": 0,\n              \"duration\": 480\n            }\n          ]\n        },\n        {\n          \"id\": \"melody2\",\n          \"start\": 1920,\n          \"duration\": 1920,\n          \"notes\": [\n            {\n              \"pitch\": 61,\n              \"start\": 0,\n              \"duration\": 480\n            }\n          ]\n        }\n      ]\n    }\n  ],\n  \"lyrics\": {\n    \"documents\": [\n      {\n        \"id\": \"doc1\",\n        \"title\": \"Vocal draft\"\n      }\n    ],\n    \"phrases\": [\n      {\n        \"id\": \"p1\",\n        \"text\": \"Hello world\"\n      }\n    ],\n    \"units\": [\n      {\n        \"id\": \"u1\",\n        \"text\": \"Hello\"\n      }\n    ],\n    \"alignments\": [\n      {\n        \"id\": \"al1\",\n        \"phraseId\": \"p1\",\n        \"unitId\": \"u1\"\n      }\n    ]\n  },\n  \"extensions\": {\n    \"org.ostf.section-role-appearance.v1\": {\n      \"version\": \"1.0.0\",\n      \"data\": {\n        \"roleDefinitions\": [\n          {\n            \"id\": \"r.theme\",\n            \"name\": \"Theme\",\n            \"baseRole\": \"other\"\n          }\n        ],\n        \"sectionRoleAssignments\": {\n          \"s2\": \"r.theme\"\n        },\n        \"appearance\": {\n          \"roleColors\": {},\n          \"customRoleColors\": {},\n          \"objectColors\": [\n            {\n              \"targetType\": \"chordClip\",\n              \"targetId\": \"chord1\",\n              \"color\": \"#336699\"\n            }\n          ]\n        }\n      }\n    }\n  }\n}\n",
+        "conversionReport": {
+          "authoringMode": "archive-example-only",
+          "runtimeMigrationPerformed": false,
+          "converted": [],
+          "uninterpreted": [
+            {
+              "path": "/",
+              "reason": "Original 2.3 source retained; no musical conversion is claimed by this authored example."
+            }
+          ],
+          "assumptions": [],
+          "warnings": [
+            "Core music is newly authored and is not asserted to be a conversion of this archived source."
+          ],
+          "idMap": {}
+        }
+      }
+    }
+  }
+}

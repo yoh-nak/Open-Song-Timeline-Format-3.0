@@ -1,0 +1,211 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Missing historical profile references retained explicitly",
+    "primaryMelodyTrackId": "melody-track"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "melody-track",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "melody-clip",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "melody-c",
+              "start": 0,
+              "duration": 432,
+              "pitch": 60
+            },
+            {
+              "id": "melody-e",
+              "start": 480,
+              "duration": 432,
+              "pitch": 64
+            },
+            {
+              "id": "melody-g",
+              "start": 960,
+              "duration": 432,
+              "pitch": 67
+            },
+            {
+              "id": "melody-a",
+              "start": 1440,
+              "duration": 432,
+              "pitch": 69
+            }
+          ]
+        }
+      ],
+      "role": "melody"
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.relative-phrase.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "stale",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "assignments": [
+          {
+            "noteId": "missing-note",
+            "basis": "chordTone",
+            "contextId": "missing-chord",
+            "anchorPitch": 60,
+            "index": 1,
+            "chromaticOffset": 0
+          }
+        ]
+      }
+    },
+    "org.ostf.generation-context.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "unverified",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "processes": [
+          {
+            "id": "old-process",
+            "generator": {
+              "id": "org.example.old-engine",
+              "version": "old"
+            },
+            "inputs": [
+              {
+                "role": "old-input",
+                "ref": {
+                  "type": "resource",
+                  "id": "missing-resource"
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "type": "clip",
+                "id": "missing-output"
+              }
+            ],
+            "protectedNoteIds": [
+              "missing-note"
+            ],
+            "vendorExtension": "com.example.missing-state.v1"
+          }
+        ]
+      }
+    },
+    "org.ostf.appearance.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "stale",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "roleDefinitions": [
+          {
+            "id": "old-role",
+            "name": "Old role"
+          }
+        ],
+        "sectionRoleAssignments": {
+          "missing-section": "old-role"
+        },
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {
+            "old-role": "#123456"
+          },
+          "objectColors": [
+            {
+              "target": {
+                "type": "note",
+                "id": "missing-note"
+              },
+              "color": "#654321"
+            }
+          ]
+        }
+      }
+    },
+    "org.ostf.phrase-library.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "stale",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "templates": [],
+        "instances": [
+          {
+            "id": "old-instance",
+            "templateId": "missing-template",
+            "clipId": "missing-clip",
+            "repeatCount": 1,
+            "transpose": 0,
+            "noteMap": []
+          }
+        ]
+      }
+    },
+    "org.ostf.clip-choices.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "unverified",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "groups": [
+          {
+            "id": "old-group",
+            "candidates": [
+              {
+                "id": "old-candidate",
+                "clipIds": [
+                  "missing-choice-clip"
+                ]
+              }
+            ],
+            "selectedCandidateId": "missing-candidate"
+          }
+        ]
+      }
+    }
+  }
+}

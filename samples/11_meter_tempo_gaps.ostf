@@ -1,0 +1,85 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Meter changes, section gaps and tempo changes"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "section-three",
+        "name": "Three",
+        "start": 0,
+        "duration": 2880
+      },
+      {
+        "id": "section-six",
+        "name": "Six",
+        "start": 3840,
+        "duration": 2880
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120.5
+      },
+      {
+        "at": 1920,
+        "bpm": 90
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 3,
+        "denominator": 4
+      },
+      {
+        "at": 2880,
+        "numerator": 6,
+        "denominator": 8
+      },
+      {
+        "at": 3500,
+        "numerator": 5,
+        "denominator": 8
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "meter-track",
+      "name": "Meter",
+      "clips": [
+        {
+          "id": "meter-clip",
+          "start": 0,
+          "duration": 3840,
+          "notes": [
+            {
+              "id": "meter-note",
+              "start": 6480,
+              "duration": 720,
+              "pitch": 62
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

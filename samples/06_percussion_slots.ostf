@@ -1,0 +1,109 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Two kicks with the same output hint and an unmapped slot"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "drums",
+      "name": "Percussion",
+      "clips": [
+        {
+          "id": "drum-clip",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "kick-a-note",
+              "start": 0,
+              "duration": 120,
+              "soundSlotId": "kick-a"
+            },
+            {
+              "id": "metal-note",
+              "start": 480,
+              "duration": 60,
+              "soundSlotId": "metal"
+            },
+            {
+              "id": "kick-b-note",
+              "start": 960,
+              "duration": 120,
+              "soundSlotId": "kick-b"
+            }
+          ]
+        }
+      ],
+      "role": "drums"
+    },
+    {
+      "id": "pitched-808",
+      "name": "Tuned 808",
+      "clips": [
+        {
+          "id": "808-clip",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "808-note",
+              "start": 0,
+              "duration": 1440,
+              "pitch": 36
+            }
+          ]
+        }
+      ],
+      "role": "bass"
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "kick-a",
+      "name": "Kick A",
+      "role": "kick",
+      "midiNote": 12
+    },
+    {
+      "id": "kick-b",
+      "name": "Kick B",
+      "role": "kick",
+      "midiNote": 12
+    },
+    {
+      "id": "metal",
+      "name": "Metal Click",
+      "role": "metal-click"
+    }
+  ],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

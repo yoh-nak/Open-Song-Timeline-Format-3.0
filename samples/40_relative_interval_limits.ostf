@@ -1,0 +1,179 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Relative interval-list and chromatic-offset limits"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "chord-36",
+        "start": 0,
+        "duration": 3840,
+        "label": "Declared 36-tone interval list",
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ]
+      }
+    ],
+    "scales": [
+      {
+        "id": "scale-12",
+        "start": 0,
+        "duration": 3840,
+        "tonic": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "track-limits",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "clip-limits",
+          "start": 0,
+          "duration": 3840,
+          "notes": [
+            {
+              "id": "note-chord-limit",
+              "start": 0,
+              "duration": 720,
+              "pitch": 59
+            },
+            {
+              "id": "note-scale-limit",
+              "start": 960,
+              "duration": 720,
+              "pitch": 11
+            },
+            {
+              "id": "note-low",
+              "start": 1920,
+              "duration": 720,
+              "pitch": 0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.relative-phrase.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "assignments": [
+          {
+            "noteId": "note-chord-limit",
+            "basis": "chordTone",
+            "contextId": "chord-36",
+            "anchorPitch": 0,
+            "index": 36,
+            "chromaticOffset": 24
+          },
+          {
+            "noteId": "note-scale-limit",
+            "basis": "scaleDegree",
+            "contextId": "scale-12",
+            "anchorPitch": 24,
+            "index": 12,
+            "chromaticOffset": -24
+          },
+          {
+            "noteId": "note-low",
+            "basis": "scaleDegree",
+            "contextId": "scale-12",
+            "anchorPitch": 24,
+            "index": 1,
+            "chromaticOffset": -24
+          }
+        ]
+      }
+    }
+  }
+}

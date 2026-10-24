@@ -1,0 +1,70 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Pickups, tails and later note starts"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "boundary-track",
+      "name": "Boundary",
+      "clips": [
+        {
+          "id": "boundary-clip",
+          "start": 960,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "pickup-note",
+              "start": -120,
+              "duration": 480,
+              "pitch": 60
+            },
+            {
+              "id": "tail-note",
+              "start": 720,
+              "duration": 720,
+              "pitch": 64
+            },
+            {
+              "id": "outside-note",
+              "start": 1440,
+              "duration": 120,
+              "pitch": 67
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

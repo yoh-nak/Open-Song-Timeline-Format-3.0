@@ -1,0 +1,118 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Many-to-many Japanese lyric alignment"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "vocal-track",
+      "name": "Vocal",
+      "clips": [
+        {
+          "id": "vocal-clip",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "vocal-a",
+              "start": 0,
+              "duration": 480,
+              "pitch": 60
+            },
+            {
+              "id": "vocal-b",
+              "start": 480,
+              "duration": 480,
+              "pitch": 62
+            },
+            {
+              "id": "vocal-c",
+              "start": 960,
+              "duration": 480,
+              "pitch": 64
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "vocal-document",
+        "language": "ja"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "vocal-phrase",
+        "documentId": "vocal-document",
+        "text": "夜明け",
+        "pronunciation": "よあけ",
+        "start": 0,
+        "duration": 1920
+      }
+    ],
+    "units": [
+      {
+        "id": "vocal-unit-a",
+        "phraseId": "vocal-phrase",
+        "text": "夜",
+        "pronunciation": "よ"
+      },
+      {
+        "id": "vocal-unit-b",
+        "phraseId": "vocal-phrase",
+        "text": "明け",
+        "pronunciation": "あけ"
+      }
+    ],
+    "alignments": [
+      {
+        "id": "vocal-alignment-a",
+        "unitIds": [
+          "vocal-unit-a",
+          "vocal-unit-b"
+        ],
+        "noteIds": [
+          "vocal-a",
+          "vocal-b"
+        ]
+      },
+      {
+        "id": "vocal-alignment-b",
+        "unitIds": [
+          "vocal-unit-b"
+        ],
+        "noteIds": [
+          "vocal-c"
+        ]
+      }
+    ]
+  },
+  "resources": [],
+  "extensions": {}
+}

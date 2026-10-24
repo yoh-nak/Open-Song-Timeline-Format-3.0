@@ -1,0 +1,64 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Every resource kind; inert external references"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [
+    {
+      "id": "resource-audio",
+      "kind": "audio",
+      "uri": "urn:example:audio",
+      "name": "Audio reference"
+    },
+    {
+      "id": "resource-midi",
+      "kind": "midi",
+      "uri": "urn:example:midi",
+      "name": "Midi reference"
+    },
+    {
+      "id": "resource-text",
+      "kind": "text",
+      "uri": "urn:example:text",
+      "name": "Text reference",
+      "sha256": "06aff8c5ecdfb679743a1da5aafb209088002ea3b92cc11aae32cee076b89f24"
+    },
+    {
+      "id": "resource-other",
+      "kind": "other",
+      "uri": "urn:example:other",
+      "name": "Other reference"
+    }
+  ],
+  "extensions": {}
+}

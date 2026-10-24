@@ -1,0 +1,220 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Core field atlas — 全Coreフィールド",
+    "primaryMelodyTrackId": "track-lead"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "section-verse",
+        "name": "Verse",
+        "start": 0,
+        "duration": 3840,
+        "role": "verse"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 123.5
+      },
+      {
+        "at": 1920,
+        "bpm": 118
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "chord-c",
+        "start": 0,
+        "duration": 1920,
+        "label": "Cmaj7/E",
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7,
+          11
+        ],
+        "bass": {
+          "step": "E",
+          "alter": 0
+        }
+      },
+      {
+        "id": "chord-label",
+        "start": 1920,
+        "duration": 1920,
+        "label": "自由な和声ラベル",
+        "bass": {
+          "step": "G",
+          "alter": 0
+        }
+      }
+    ],
+    "scales": [
+      {
+        "id": "scale-c",
+        "start": 0,
+        "duration": 3840,
+        "label": "C major",
+        "tonic": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ]
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "track-lead",
+      "name": "Lead",
+      "role": "melody",
+      "instrument": {
+        "name": "Soft piano",
+        "family": "keyboard"
+      },
+      "enabled": true,
+      "clips": [
+        {
+          "id": "clip-lead",
+          "name": "Phrase A",
+          "start": 0,
+          "duration": 3840,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-c",
+              "start": 0,
+              "duration": 720,
+              "pitch": 60
+            },
+            {
+              "id": "note-e",
+              "start": 960,
+              "duration": 720,
+              "pitch": 64
+            },
+            {
+              "id": "note-g",
+              "start": 1920,
+              "duration": 2400,
+              "pitch": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "track-drums",
+      "name": "Brushes",
+      "role": "percussion",
+      "instrument": {
+        "name": "Brush kit",
+        "family": "drums"
+      },
+      "enabled": true,
+      "clips": [
+        {
+          "id": "clip-drums",
+          "name": "Brush hit",
+          "start": 0,
+          "duration": 3840,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-brush",
+              "start": 0,
+              "duration": 120,
+              "soundSlotId": "slot-brush"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "slot-brush",
+      "name": "Brush tap",
+      "role": "snare",
+      "midiNote": 38
+    }
+  ],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "lyric-document",
+        "title": "光",
+        "language": "ja"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "lyric-phrase",
+        "documentId": "lyric-document",
+        "text": "光",
+        "pronunciation": "ひかり",
+        "start": 0,
+        "duration": 4320
+      }
+    ],
+    "units": [
+      {
+        "id": "lyric-unit",
+        "phraseId": "lyric-phrase",
+        "text": "光",
+        "pronunciation": "ひかり",
+        "start": 0,
+        "duration": 4320
+      }
+    ],
+    "alignments": [
+      {
+        "id": "lyric-alignment",
+        "unitIds": [
+          "lyric-unit"
+        ],
+        "noteIds": [
+          "note-c",
+          "note-e",
+          "note-g"
+        ]
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "resource-text",
+      "kind": "text",
+      "uri": "urn:example:empty-text",
+      "name": "Empty source text",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "extensions": {}
+}

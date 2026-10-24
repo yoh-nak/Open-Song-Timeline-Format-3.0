@@ -1,0 +1,387 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Appearance: every typed target",
+    "primaryMelodyTrackId": "track-lead"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "section-verse",
+        "name": "Verse",
+        "start": 0,
+        "duration": 3840,
+        "role": "verse"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 123.5
+      },
+      {
+        "at": 1920,
+        "bpm": 118
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "chord-c",
+        "start": 0,
+        "duration": 1920,
+        "label": "Cmaj7/E",
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7,
+          11
+        ],
+        "bass": {
+          "step": "E",
+          "alter": 0
+        }
+      },
+      {
+        "id": "chord-label",
+        "start": 1920,
+        "duration": 1920,
+        "label": "自由な和声ラベル",
+        "bass": {
+          "step": "G",
+          "alter": 0
+        }
+      }
+    ],
+    "scales": [
+      {
+        "id": "scale-c",
+        "start": 0,
+        "duration": 3840,
+        "label": "C major",
+        "tonic": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          9,
+          11
+        ]
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "track-lead",
+      "name": "Lead",
+      "role": "melody",
+      "instrument": {
+        "name": "Soft piano",
+        "family": "keyboard"
+      },
+      "enabled": true,
+      "clips": [
+        {
+          "id": "clip-lead",
+          "name": "Phrase A",
+          "start": 0,
+          "duration": 3840,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-c",
+              "start": 0,
+              "duration": 720,
+              "pitch": 60
+            },
+            {
+              "id": "note-e",
+              "start": 960,
+              "duration": 720,
+              "pitch": 64
+            },
+            {
+              "id": "note-g",
+              "start": 1920,
+              "duration": 2400,
+              "pitch": 67
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "track-drums",
+      "name": "Brushes",
+      "role": "percussion",
+      "instrument": {
+        "name": "Brush kit",
+        "family": "drums"
+      },
+      "enabled": true,
+      "clips": [
+        {
+          "id": "clip-drums",
+          "name": "Brush hit",
+          "start": 0,
+          "duration": 3840,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-brush",
+              "start": 0,
+              "duration": 120,
+              "soundSlotId": "slot-brush"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [
+    {
+      "id": "slot-brush",
+      "name": "Brush tap",
+      "role": "snare",
+      "midiNote": 38
+    }
+  ],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "lyric-document",
+        "title": "光",
+        "language": "ja"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "lyric-phrase",
+        "documentId": "lyric-document",
+        "text": "光",
+        "pronunciation": "ひかり",
+        "start": 0,
+        "duration": 4320
+      }
+    ],
+    "units": [
+      {
+        "id": "lyric-unit",
+        "phraseId": "lyric-phrase",
+        "text": "光",
+        "pronunciation": "ひかり",
+        "start": 0,
+        "duration": 4320
+      }
+    ],
+    "alignments": [
+      {
+        "id": "lyric-alignment",
+        "unitIds": [
+          "lyric-unit"
+        ],
+        "noteIds": [
+          "note-c",
+          "note-e",
+          "note-g"
+        ]
+      }
+    ]
+  },
+  "resources": [
+    {
+      "id": "resource-text",
+      "kind": "text",
+      "uri": "urn:example:empty-text",
+      "name": "Empty source text",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "extensions": {
+    "org.ostf.appearance.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "objects",
+        "refs": [
+          {
+            "type": "section",
+            "id": "section-verse"
+          },
+          {
+            "type": "track",
+            "id": "track-lead"
+          },
+          {
+            "type": "clip",
+            "id": "clip-lead"
+          },
+          {
+            "type": "note",
+            "id": "note-c"
+          },
+          {
+            "type": "chord",
+            "id": "chord-c"
+          },
+          {
+            "type": "scale",
+            "id": "scale-c"
+          },
+          {
+            "type": "soundSlot",
+            "id": "slot-brush"
+          },
+          {
+            "type": "lyricDocument",
+            "id": "lyric-document"
+          },
+          {
+            "type": "lyricPhrase",
+            "id": "lyric-phrase"
+          },
+          {
+            "type": "lyricUnit",
+            "id": "lyric-unit"
+          },
+          {
+            "type": "lyricAlignment",
+            "id": "lyric-alignment"
+          },
+          {
+            "type": "resource",
+            "id": "resource-text"
+          }
+        ]
+      },
+      "data": {
+        "roleDefinitions": [
+          {
+            "id": "custom-lift",
+            "name": "Lift",
+            "baseRole": "chorus"
+          }
+        ],
+        "sectionRoleAssignments": {
+          "section-verse": "custom-lift"
+        },
+        "appearance": {
+          "roleColors": {
+            "verse": "#224466",
+            "chorus": "#AABBCC",
+            "melody": "#dd9900",
+            "percussion": "#778899"
+          },
+          "customRoleColors": {
+            "custom-lift": "#0123Ab"
+          },
+          "objectColors": [
+            {
+              "target": {
+                "type": "section",
+                "id": "section-verse"
+              },
+              "color": "#123400"
+            },
+            {
+              "target": {
+                "type": "track",
+                "id": "track-lead"
+              },
+              "color": "#123500"
+            },
+            {
+              "target": {
+                "type": "clip",
+                "id": "clip-lead"
+              },
+              "color": "#123600"
+            },
+            {
+              "target": {
+                "type": "note",
+                "id": "note-c"
+              },
+              "color": "#123700"
+            },
+            {
+              "target": {
+                "type": "chord",
+                "id": "chord-c"
+              },
+              "color": "#123800"
+            },
+            {
+              "target": {
+                "type": "scale",
+                "id": "scale-c"
+              },
+              "color": "#123900"
+            },
+            {
+              "target": {
+                "type": "soundSlot",
+                "id": "slot-brush"
+              },
+              "color": "#123A00"
+            },
+            {
+              "target": {
+                "type": "lyricDocument",
+                "id": "lyric-document"
+              },
+              "color": "#123B00"
+            },
+            {
+              "target": {
+                "type": "lyricPhrase",
+                "id": "lyric-phrase"
+              },
+              "color": "#123C00"
+            },
+            {
+              "target": {
+                "type": "lyricUnit",
+                "id": "lyric-unit"
+              },
+              "color": "#123D00"
+            },
+            {
+              "target": {
+                "type": "lyricAlignment",
+                "id": "lyric-alignment"
+              },
+              "color": "#123E00"
+            },
+            {
+              "target": {
+                "type": "resource",
+                "id": "resource-text"
+              },
+              "color": "#123F00"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Opaque JSON value kinds and precise number tokens"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "com.example.value-null.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": null
+    },
+    "com.example.value-boolean.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": false
+    },
+    "com.example.value-true.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": true
+    },
+    "com.example.value-integer.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": 9007199254740993
+    },
+    "com.example.value-decimal.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": 0.123456789012345678901234567890123456789
+    },
+    "com.example.value-string.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": "Text / 文字列 / emoji 🎵"
+    },
+    "com.example.value-array.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": [
+        null,
+        true,
+        7,
+        "x"
+      ]
+    },
+    "com.example.value-object.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "arbitraryKey": "An opaque field",
+        "negativeZero": -0.0,
+        "tiny": 1e-400
+      }
+    },
+    "org.ostf.generation-context.v1": {
+      "version": "2.0.0",
+      "status": "unverified",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "futureLayout": true
+      }
+    },
+    "org.ostf.appearance.v1": {
+      "version": "2.0.0",
+      "status": "unverified",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": null
+    },
+    "org.ostf.legacy-import.v1": {
+      "version": "2.0.0",
+      "status": "unverified",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": [
+        "unknown archive layout"
+      ]
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 6720,
+  "song": {
+    "title": "Seven equal subdivisions of one quarter note"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "seven-track",
+      "name": "Seven",
+      "clips": [
+        {
+          "id": "seven-clip",
+          "start": 0,
+          "duration": 6720,
+          "notes": [
+            {
+              "id": "seven-0",
+              "start": 0,
+              "duration": 720,
+              "pitch": 60
+            },
+            {
+              "id": "seven-1",
+              "start": 960,
+              "duration": 720,
+              "pitch": 61
+            },
+            {
+              "id": "seven-2",
+              "start": 1920,
+              "duration": 720,
+              "pitch": 62
+            },
+            {
+              "id": "seven-3",
+              "start": 2880,
+              "duration": 720,
+              "pitch": 63
+            },
+            {
+              "id": "seven-4",
+              "start": 3840,
+              "duration": 720,
+              "pitch": 64
+            },
+            {
+              "id": "seven-5",
+              "start": 4800,
+              "duration": 720,
+              "pitch": 65
+            },
+            {
+              "id": "seven-6",
+              "start": 5760,
+              "duration": 720,
+              "pitch": 66
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

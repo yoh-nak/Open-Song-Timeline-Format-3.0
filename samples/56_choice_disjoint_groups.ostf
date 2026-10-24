@@ -1,0 +1,167 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Independent choice groups for separate musical parts"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "track-bass",
+      "name": "Bass",
+      "role": "bass",
+      "clips": [
+        {
+          "id": "clip-bass-a",
+          "name": "bass a",
+          "start": 0,
+          "duration": 1920,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-bass-a",
+              "start": 0,
+              "duration": 1440,
+              "pitch": 36
+            }
+          ]
+        },
+        {
+          "id": "clip-bass-b",
+          "name": "bass b",
+          "start": 0,
+          "duration": 1920,
+          "enabled": false,
+          "notes": [
+            {
+              "id": "note-bass-b",
+              "start": 0,
+              "duration": 1440,
+              "pitch": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "track-lead",
+      "name": "Lead",
+      "role": "lead",
+      "clips": [
+        {
+          "id": "clip-lead-a",
+          "name": "lead a",
+          "start": 0,
+          "duration": 1920,
+          "enabled": true,
+          "notes": [
+            {
+              "id": "note-lead-a",
+              "start": 0,
+              "duration": 1440,
+              "pitch": 60
+            }
+          ]
+        },
+        {
+          "id": "clip-lead-b",
+          "name": "lead b",
+          "start": 0,
+          "duration": 1920,
+          "enabled": false,
+          "notes": [
+            {
+              "id": "note-lead-b",
+              "start": 0,
+              "duration": 1440,
+              "pitch": 67
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.clip-choices.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "groups": [
+          {
+            "id": "group-bass",
+            "name": "Bass alternatives",
+            "candidates": [
+              {
+                "id": "a",
+                "name": "First",
+                "clipIds": [
+                  "clip-bass-a"
+                ]
+              },
+              {
+                "id": "b",
+                "name": "Second",
+                "clipIds": [
+                  "clip-bass-b"
+                ]
+              }
+            ],
+            "selectedCandidateId": "a"
+          },
+          {
+            "id": "group-lead",
+            "name": "Lead alternatives",
+            "candidates": [
+              {
+                "id": "a",
+                "name": "First",
+                "clipIds": [
+                  "clip-lead-a"
+                ]
+              },
+              {
+                "id": "b",
+                "name": "Second",
+                "clipIds": [
+                  "clip-lead-b"
+                ]
+              }
+            ],
+            "selectedCandidateId": "a"
+          }
+        ]
+      }
+    }
+  }
+}

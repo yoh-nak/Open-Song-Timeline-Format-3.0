@@ -1,0 +1,161 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "Composite song with roles colors chords melody lyrics"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "s1",
+        "name": "Intro",
+        "start": 0,
+        "duration": 15360,
+        "role": "intro"
+      },
+      {
+        "id": "s2",
+        "name": "Verse",
+        "start": 15360,
+        "duration": 15360,
+        "role": "other"
+      },
+      {
+        "id": "s3",
+        "name": "Chorus",
+        "start": 30720,
+        "duration": 15360,
+        "role": "other"
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "chord1",
+        "start": 0,
+        "duration": 1920,
+        "symbol": "Am7"
+      },
+      {
+        "id": "chord2",
+        "start": 1920,
+        "duration": 1920,
+        "symbol": "D7"
+      },
+      {
+        "id": "chord3",
+        "start": 3840,
+        "duration": 1920,
+        "symbol": "Gmaj7"
+      },
+      {
+        "id": "chord4",
+        "start": 5760,
+        "duration": 1920,
+        "symbol": "Cmaj7"
+      }
+    ]
+  },
+  "melodies": [
+    {
+      "id": "lead",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "melody1",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "pitch": 60,
+              "start": 0,
+              "duration": 480
+            }
+          ]
+        },
+        {
+          "id": "melody2",
+          "start": 1920,
+          "duration": 1920,
+          "notes": [
+            {
+              "pitch": 61,
+              "start": 0,
+              "duration": 480
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "doc1",
+        "title": "Vocal draft"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "p1",
+        "text": "Hello world"
+      }
+    ],
+    "units": [
+      {
+        "id": "u1",
+        "text": "Hello"
+      }
+    ],
+    "alignments": [
+      {
+        "id": "al1",
+        "phraseId": "p1",
+        "unitId": "u1"
+      }
+    ]
+  },
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [
+          {
+            "id": "r.theme",
+            "name": "Theme",
+            "baseRole": "other"
+          }
+        ],
+        "sectionRoleAssignments": {
+          "s2": "r.theme"
+        },
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": [
+            {
+              "targetType": "chordClip",
+              "targetId": "chord1",
+              "color": "#336699"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

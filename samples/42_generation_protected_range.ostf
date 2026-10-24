@@ -1,0 +1,137 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Protected melody and a bounded generation request",
+    "primaryMelodyTrackId": "melody-track"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "melody-track",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "melody-clip",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "melody-c",
+              "start": 0,
+              "duration": 432,
+              "pitch": 60
+            },
+            {
+              "id": "melody-e",
+              "start": 480,
+              "duration": 432,
+              "pitch": 64
+            },
+            {
+              "id": "melody-g",
+              "start": 960,
+              "duration": 432,
+              "pitch": 67
+            },
+            {
+              "id": "melody-a",
+              "start": 1440,
+              "duration": 432,
+              "pitch": 69
+            }
+          ]
+        }
+      ],
+      "role": "melody"
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "com.example.composer-settings.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "seed": 17,
+        "complexity": 0.4,
+        "preset": "Illustrative engine-specific preset"
+      }
+    },
+    "org.ostf.generation-context.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "processes": [
+          {
+            "id": "process-continue",
+            "generator": {
+              "id": "org.example.continuation-engine",
+              "version": "example-1"
+            },
+            "inputs": [
+              {
+                "role": "melodic-seed",
+                "ref": {
+                  "type": "clip",
+                  "id": "melody-clip"
+                },
+                "readRange": {
+                  "start": 0,
+                  "duration": 960
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "type": "clip",
+                "id": "melody-clip"
+              }
+            ],
+            "targetRange": {
+              "start": 960,
+              "duration": 960
+            },
+            "protectedNoteIds": [
+              "melody-c",
+              "melody-e"
+            ],
+            "vendorExtension": "com.example.composer-settings.v1"
+          }
+        ]
+      }
+    }
+  }
+}

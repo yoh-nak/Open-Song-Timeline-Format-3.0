@@ -1,0 +1,704 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Pitch-class spellings: seven steps and five alterations"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "spelling-A-0",
+        "start": 0,
+        "duration": 960,
+        "label": "Abb",
+        "root": {
+          "step": "A",
+          "alter": -2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "A",
+          "alter": -2
+        }
+      },
+      {
+        "id": "spelling-A-1",
+        "start": 960,
+        "duration": 960,
+        "label": "Ab",
+        "root": {
+          "step": "A",
+          "alter": -1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "A",
+          "alter": -1
+        }
+      },
+      {
+        "id": "spelling-A-2",
+        "start": 1920,
+        "duration": 960,
+        "label": "A",
+        "root": {
+          "step": "A",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "A",
+          "alter": 0
+        }
+      },
+      {
+        "id": "spelling-A-3",
+        "start": 2880,
+        "duration": 960,
+        "label": "A#",
+        "root": {
+          "step": "A",
+          "alter": 1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "A",
+          "alter": 1
+        }
+      },
+      {
+        "id": "spelling-A-4",
+        "start": 3840,
+        "duration": 960,
+        "label": "A##",
+        "root": {
+          "step": "A",
+          "alter": 2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "A",
+          "alter": 2
+        }
+      },
+      {
+        "id": "spelling-B-0",
+        "start": 4800,
+        "duration": 960,
+        "label": "Bbb",
+        "root": {
+          "step": "B",
+          "alter": -2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "B",
+          "alter": -2
+        }
+      },
+      {
+        "id": "spelling-B-1",
+        "start": 5760,
+        "duration": 960,
+        "label": "Bb",
+        "root": {
+          "step": "B",
+          "alter": -1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "B",
+          "alter": -1
+        }
+      },
+      {
+        "id": "spelling-B-2",
+        "start": 6720,
+        "duration": 960,
+        "label": "B",
+        "root": {
+          "step": "B",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "B",
+          "alter": 0
+        }
+      },
+      {
+        "id": "spelling-B-3",
+        "start": 7680,
+        "duration": 960,
+        "label": "B#",
+        "root": {
+          "step": "B",
+          "alter": 1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "B",
+          "alter": 1
+        }
+      },
+      {
+        "id": "spelling-B-4",
+        "start": 8640,
+        "duration": 960,
+        "label": "B##",
+        "root": {
+          "step": "B",
+          "alter": 2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "B",
+          "alter": 2
+        }
+      },
+      {
+        "id": "spelling-C-0",
+        "start": 9600,
+        "duration": 960,
+        "label": "Cbb",
+        "root": {
+          "step": "C",
+          "alter": -2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "C",
+          "alter": -2
+        }
+      },
+      {
+        "id": "spelling-C-1",
+        "start": 10560,
+        "duration": 960,
+        "label": "Cb",
+        "root": {
+          "step": "C",
+          "alter": -1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "C",
+          "alter": -1
+        }
+      },
+      {
+        "id": "spelling-C-2",
+        "start": 11520,
+        "duration": 960,
+        "label": "C",
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "C",
+          "alter": 0
+        }
+      },
+      {
+        "id": "spelling-C-3",
+        "start": 12480,
+        "duration": 960,
+        "label": "C#",
+        "root": {
+          "step": "C",
+          "alter": 1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "C",
+          "alter": 1
+        }
+      },
+      {
+        "id": "spelling-C-4",
+        "start": 13440,
+        "duration": 960,
+        "label": "C##",
+        "root": {
+          "step": "C",
+          "alter": 2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "C",
+          "alter": 2
+        }
+      },
+      {
+        "id": "spelling-D-0",
+        "start": 14400,
+        "duration": 960,
+        "label": "Dbb",
+        "root": {
+          "step": "D",
+          "alter": -2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "D",
+          "alter": -2
+        }
+      },
+      {
+        "id": "spelling-D-1",
+        "start": 15360,
+        "duration": 960,
+        "label": "Db",
+        "root": {
+          "step": "D",
+          "alter": -1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "D",
+          "alter": -1
+        }
+      },
+      {
+        "id": "spelling-D-2",
+        "start": 16320,
+        "duration": 960,
+        "label": "D",
+        "root": {
+          "step": "D",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "D",
+          "alter": 0
+        }
+      },
+      {
+        "id": "spelling-D-3",
+        "start": 17280,
+        "duration": 960,
+        "label": "D#",
+        "root": {
+          "step": "D",
+          "alter": 1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "D",
+          "alter": 1
+        }
+      },
+      {
+        "id": "spelling-D-4",
+        "start": 18240,
+        "duration": 960,
+        "label": "D##",
+        "root": {
+          "step": "D",
+          "alter": 2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "D",
+          "alter": 2
+        }
+      },
+      {
+        "id": "spelling-E-0",
+        "start": 19200,
+        "duration": 960,
+        "label": "Ebb",
+        "root": {
+          "step": "E",
+          "alter": -2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "E",
+          "alter": -2
+        }
+      },
+      {
+        "id": "spelling-E-1",
+        "start": 20160,
+        "duration": 960,
+        "label": "Eb",
+        "root": {
+          "step": "E",
+          "alter": -1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "E",
+          "alter": -1
+        }
+      },
+      {
+        "id": "spelling-E-2",
+        "start": 21120,
+        "duration": 960,
+        "label": "E",
+        "root": {
+          "step": "E",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "E",
+          "alter": 0
+        }
+      },
+      {
+        "id": "spelling-E-3",
+        "start": 22080,
+        "duration": 960,
+        "label": "E#",
+        "root": {
+          "step": "E",
+          "alter": 1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "E",
+          "alter": 1
+        }
+      },
+      {
+        "id": "spelling-E-4",
+        "start": 23040,
+        "duration": 960,
+        "label": "E##",
+        "root": {
+          "step": "E",
+          "alter": 2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "E",
+          "alter": 2
+        }
+      },
+      {
+        "id": "spelling-F-0",
+        "start": 24000,
+        "duration": 960,
+        "label": "Fbb",
+        "root": {
+          "step": "F",
+          "alter": -2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "F",
+          "alter": -2
+        }
+      },
+      {
+        "id": "spelling-F-1",
+        "start": 24960,
+        "duration": 960,
+        "label": "Fb",
+        "root": {
+          "step": "F",
+          "alter": -1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "F",
+          "alter": -1
+        }
+      },
+      {
+        "id": "spelling-F-2",
+        "start": 25920,
+        "duration": 960,
+        "label": "F",
+        "root": {
+          "step": "F",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "F",
+          "alter": 0
+        }
+      },
+      {
+        "id": "spelling-F-3",
+        "start": 26880,
+        "duration": 960,
+        "label": "F#",
+        "root": {
+          "step": "F",
+          "alter": 1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "F",
+          "alter": 1
+        }
+      },
+      {
+        "id": "spelling-F-4",
+        "start": 27840,
+        "duration": 960,
+        "label": "F##",
+        "root": {
+          "step": "F",
+          "alter": 2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "F",
+          "alter": 2
+        }
+      },
+      {
+        "id": "spelling-G-0",
+        "start": 28800,
+        "duration": 960,
+        "label": "Gbb",
+        "root": {
+          "step": "G",
+          "alter": -2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "G",
+          "alter": -2
+        }
+      },
+      {
+        "id": "spelling-G-1",
+        "start": 29760,
+        "duration": 960,
+        "label": "Gb",
+        "root": {
+          "step": "G",
+          "alter": -1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "G",
+          "alter": -1
+        }
+      },
+      {
+        "id": "spelling-G-2",
+        "start": 30720,
+        "duration": 960,
+        "label": "G",
+        "root": {
+          "step": "G",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "G",
+          "alter": 0
+        }
+      },
+      {
+        "id": "spelling-G-3",
+        "start": 31680,
+        "duration": 960,
+        "label": "G#",
+        "root": {
+          "step": "G",
+          "alter": 1
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "G",
+          "alter": 1
+        }
+      },
+      {
+        "id": "spelling-G-4",
+        "start": 32640,
+        "duration": 960,
+        "label": "G##",
+        "root": {
+          "step": "G",
+          "alter": 2
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ],
+        "bass": {
+          "step": "G",
+          "alter": 2
+        }
+      }
+    ],
+    "scales": []
+  },
+  "tracks": [],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

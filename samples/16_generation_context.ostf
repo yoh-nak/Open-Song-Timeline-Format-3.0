@@ -1,0 +1,163 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Generation context with audio, harmony and text inputs"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "generation-chord",
+        "start": 0,
+        "duration": 1920,
+        "label": "Dm",
+        "root": {
+          "step": "D",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          3,
+          7
+        ]
+      }
+    ],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "generation-track",
+      "name": "Generated",
+      "clips": [
+        {
+          "id": "generation-clip",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "protected-note",
+              "start": 0,
+              "duration": 480,
+              "pitch": 62
+            },
+            {
+              "id": "generated-note",
+              "start": 960,
+              "duration": 480,
+              "pitch": 65
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [
+    {
+      "id": "audio-input",
+      "kind": "audio",
+      "uri": "https://example.invalid/source.wav",
+      "sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "id": "text-input",
+      "kind": "text",
+      "uri": "sources/brief.txt"
+    }
+  ],
+  "extensions": {
+    "com.example.generator.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "algorithm": "illustrative-only",
+        "seed": 17
+      }
+    },
+    "org.ostf.generation-context.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "processes": [
+          {
+            "id": "process-a",
+            "generator": {
+              "id": "com.example.generator",
+              "version": "example-1"
+            },
+            "inputs": [
+              {
+                "role": "harmony",
+                "ref": {
+                  "type": "chord",
+                  "id": "generation-chord"
+                }
+              },
+              {
+                "role": "audio-context",
+                "ref": {
+                  "type": "resource",
+                  "id": "audio-input"
+                },
+                "readRange": {
+                  "start": 0,
+                  "duration": 3840
+                }
+              },
+              {
+                "role": "brief",
+                "ref": {
+                  "type": "resource",
+                  "id": "text-input"
+                }
+              }
+            ],
+            "outputs": [
+              {
+                "type": "clip",
+                "id": "generation-clip"
+              }
+            ],
+            "targetRange": {
+              "start": 0,
+              "duration": 1920
+            },
+            "protectedNoteIds": [
+              "protected-note"
+            ],
+            "vendorExtension": "com.example.generator.v1"
+          }
+        ]
+      }
+    }
+  }
+}

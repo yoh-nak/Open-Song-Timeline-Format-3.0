@@ -1,0 +1,104 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "A future version of a known profile"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [
+      {
+        "id": "relative-chord",
+        "start": 960,
+        "duration": 1920,
+        "label": "C",
+        "root": {
+          "step": "C",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          4,
+          7
+        ]
+      }
+    ],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "relative-track",
+      "name": "Chord phrase",
+      "clips": [
+        {
+          "id": "relative-clip",
+          "start": 0,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "relative-root",
+              "start": 0,
+              "duration": 240,
+              "pitch": 60
+            },
+            {
+              "id": "relative-third",
+              "start": 240,
+              "duration": 240,
+              "pitch": 64
+            },
+            {
+              "id": "relative-fifth",
+              "start": 480,
+              "duration": 240,
+              "pitch": 67
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.relative-phrase.v1": {
+      "version": "2.0.0-preview.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "none"
+      },
+      "data": {
+        "futureLayout": {
+          "id": "relative-track",
+          "anything": [
+            1,
+            2,
+            3
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Scale-relative notes with a chromatic offset"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": [
+      {
+        "id": "minor-scale",
+        "start": 0,
+        "duration": 1920,
+        "label": "D natural minor",
+        "tonic": {
+          "step": "D",
+          "alter": 0
+        },
+        "intervals": [
+          0,
+          2,
+          3,
+          5,
+          7,
+          8,
+          10
+        ]
+      }
+    ]
+  },
+  "tracks": [
+    {
+      "id": "scale-track",
+      "name": "Scale",
+      "clips": [
+        {
+          "id": "scale-clip",
+          "start": 0,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "scale-third",
+              "start": 0,
+              "duration": 240,
+              "pitch": 65
+            },
+            {
+              "id": "scale-sixth",
+              "start": 240,
+              "duration": 240,
+              "pitch": 70
+            },
+            {
+              "id": "scale-offset",
+              "start": 480,
+              "duration": 240,
+              "pitch": 65
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.relative-phrase.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "assignments": [
+          {
+            "noteId": "scale-third",
+            "basis": "scaleDegree",
+            "contextId": "minor-scale",
+            "anchorPitch": 62,
+            "index": 3,
+            "chromaticOffset": 0
+          },
+          {
+            "noteId": "scale-sixth",
+            "basis": "scaleDegree",
+            "contextId": "minor-scale",
+            "anchorPitch": 62,
+            "index": 6,
+            "chromaticOffset": 0
+          },
+          {
+            "noteId": "scale-offset",
+            "basis": "scaleDegree",
+            "contextId": "minor-scale",
+            "anchorPitch": 62,
+            "index": 2,
+            "chromaticOffset": 1
+          }
+        ]
+      }
+    }
+  }
+}

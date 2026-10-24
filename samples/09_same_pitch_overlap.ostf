@@ -1,0 +1,83 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Independent overlapping notes of the same pitch"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "overlap-track",
+      "name": "Overlap",
+      "clips": [
+        {
+          "id": "overlap-a",
+          "start": 0,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "note-a",
+              "start": 0,
+              "duration": 960,
+              "pitch": 60
+            },
+            {
+              "id": "note-b",
+              "start": 240,
+              "duration": 960,
+              "pitch": 60
+            },
+            {
+              "id": "note-c",
+              "start": 960,
+              "duration": 240,
+              "pitch": 60
+            }
+          ]
+        },
+        {
+          "id": "overlap-b",
+          "start": 480,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "note-d",
+              "start": 0,
+              "duration": 1200,
+              "pitch": 60
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

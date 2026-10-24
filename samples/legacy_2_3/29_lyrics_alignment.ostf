@@ -1,0 +1,76 @@
+{
+  "format": "OSTF",
+  "version": "2.3.0",
+  "ppq": 960,
+  "song": {
+    "title": "Lyric alignment opaque payload"
+  },
+  "timeline": {
+    "sections": [
+      {
+        "id": "intro",
+        "name": "Intro",
+        "start": 0,
+        "duration": 3840
+      }
+    ],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": []
+  },
+  "melodies": [],
+  "lyrics": {
+    "documents": [
+      {
+        "id": "doc1",
+        "title": "Vocal draft"
+      }
+    ],
+    "phrases": [
+      {
+        "id": "p1",
+        "text": "Hello world"
+      }
+    ],
+    "units": [
+      {
+        "id": "u1",
+        "text": "Hello"
+      }
+    ],
+    "alignments": [
+      {
+        "id": "al1",
+        "phraseId": "p1",
+        "unitId": "u1"
+      }
+    ]
+  },
+  "extensions": {
+    "org.ostf.section-role-appearance.v1": {
+      "version": "1.0.0",
+      "data": {
+        "roleDefinitions": [],
+        "sectionRoleAssignments": {},
+        "appearance": {
+          "roleColors": {},
+          "customRoleColors": {},
+          "objectColors": []
+        }
+      }
+    }
+  }
+}

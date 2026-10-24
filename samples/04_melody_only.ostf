@@ -1,0 +1,78 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Melody before harmony",
+    "primaryMelodyTrackId": "melody-track"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "melody-track",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "melody-clip",
+          "start": 0,
+          "duration": 1920,
+          "notes": [
+            {
+              "id": "melody-c",
+              "start": 0,
+              "duration": 432,
+              "pitch": 60
+            },
+            {
+              "id": "melody-e",
+              "start": 480,
+              "duration": 432,
+              "pitch": 64
+            },
+            {
+              "id": "melody-g",
+              "start": 960,
+              "duration": 432,
+              "pitch": 67
+            },
+            {
+              "id": "melody-a",
+              "start": 1440,
+              "duration": 432,
+              "pitch": 69
+            }
+          ]
+        }
+      ],
+      "role": "melody"
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

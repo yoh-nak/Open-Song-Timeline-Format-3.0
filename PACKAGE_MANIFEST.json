@@ -1,0 +1,548 @@
+{
+  "package": "Open Song Timeline Format",
+  "release": "3.0.0",
+  "prepared_date": "2026-10-24",
+  "archive_file": "OSTF_3_0_0.zip",
+  "archive_root": "OSTF_3_0_0_GitHub_Release",
+  "publication_status": "prepared-for-publication",
+  "github_publication_performed": false,
+  "runtime_verification_performed": false,
+  "file_count": 98,
+  "file_count_includes_manifest": true,
+  "file_limit": 100,
+  "counts_by_directory": {
+    "root": 12,
+    "docs": 18,
+    "samples": 64,
+    "schema": 3,
+    "tools": 1
+  },
+  "main_ostf_samples": 60,
+  "legacy_ostf_inputs": 2,
+  "standard_profile_version": "1.0.0-draft.1",
+  "catalog_counts": {
+    "canonical_parameter_declarations": 168,
+    "conditional_property_overlays": 14,
+    "total_property_occurrences": 182,
+    "named_definitions": 51,
+    "enum_sets": 7,
+    "enum_alternatives": 37,
+    "const_occurrences": 13,
+    "branch_rule_occurrences": 27,
+    "schema_nodes": 359
+  },
+  "sample_coverage_counts": {
+    "main_samples": 60,
+    "parameter_declarations": 168,
+    "parameters_located": 168,
+    "conditional_overlays": 14,
+    "overlays_located": 14,
+    "enum_value_occurrences": 37,
+    "enum_values_located": 37,
+    "const_occurrences": 13,
+    "constants_located": 13,
+    "named_definitions": 51,
+    "definitions_located": 51,
+    "branch_rule_occurrences": 27,
+    "branch_rules_encountered": 27
+  },
+  "license_scopes": {
+    "documentation_schema_data_samples": "CC-BY-4.0",
+    "reference_programs_executable_snippets": "MIT"
+  },
+  "source_provenance": "docs/SOURCE_ATTRIBUTION.md",
+  "static_inventory_note": "File counts, links, hashes and parameter occurrence locations support publication-material completeness only. They are not runtime, schema/semantic validation, operation or interoperability results.",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 2887,
+      "sha256": "0d34188a75e4a7e30f7a7b3b36fb6076d8f701d9709ef2ac206c49efaa53df90"
+    },
+    {
+      "path": "LICENSE.md",
+      "bytes": 4174,
+      "sha256": "f1176abbc9b6bc44ddc54e7656ef0b2f5e7d4ab2d34b020ee6ef254b8bd26b5e"
+    },
+    {
+      "path": "PACKAGE_MANIFEST.json",
+      "bytes": null,
+      "sha256": null,
+      "note": "Self metadata excluded to avoid a circular hash/length definition; this entry still counts as one distributed file."
+    },
+    {
+      "path": "README.md",
+      "bytes": 5700,
+      "sha256": "44ff5c66679d44edb9aae890cc0579ae07cbdfde551c181ab513ee200022bdb7"
+    },
+    {
+      "path": "README_JA.md",
+      "bytes": 6244,
+      "sha256": "6ab5a4eb522b485f312ccf00d78df235d4725fc4cf93c6ce25b1eee3253e1584"
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "bytes": 5983,
+      "sha256": "7ce8ea85bc1f826b0d3a2b9b1a9624de85c60d30f28450cac6e58eeb95285fba"
+    },
+    {
+      "path": "docs/COMPLETE_MANUAL.en.md",
+      "bytes": 52338,
+      "sha256": "b3dc4a61f843fd4fc2c13634888d0ff95afc892ec96a5bd4d5de0c187da0b790"
+    },
+    {
+      "path": "docs/COMPLETE_MANUAL.ja.md",
+      "bytes": 60197,
+      "sha256": "496250fef3d82bbbb7438e1b4bf49d24f7c6fdcc0a22b724f686f33aa8638682"
+    },
+    {
+      "path": "docs/CONFORMANCE.md",
+      "bytes": 17118,
+      "sha256": "e3ba5ee73a38019a32dd2abad273e3b92bb83c84530727f607250f307af181da"
+    },
+    {
+      "path": "docs/COVERAGE.json",
+      "bytes": 675976,
+      "sha256": "4284b31afca5265b4a70aeedc4252eb1453060ff5652acc62b33f1832076334d"
+    },
+    {
+      "path": "docs/COVERAGE.md",
+      "bytes": 65314,
+      "sha256": "481d01f3b47f01804314221f916719bf9fcc483d042e3b52c663ddb7da287d50"
+    },
+    {
+      "path": "docs/DESIGN_DECISIONS.md",
+      "bytes": 17248,
+      "sha256": "774edff5c8b89a65c0a22c257fd98a0173b79b17c98da6c24daaaef5c7537cdc"
+    },
+    {
+      "path": "docs/FORMAT_SPECIFICATION.en.md",
+      "bytes": 64107,
+      "sha256": "4eb55718d85a1fd98d0555a34adffd752dcb2a78b75459155abfc5a4d5963ec6"
+    },
+    {
+      "path": "docs/FORMAT_SPECIFICATION.ja.md",
+      "bytes": 68126,
+      "sha256": "a1bccd2d64537c3c3877c1b02a09161fdc74c6b4c90f0697bd2549be629140a6"
+    },
+    {
+      "path": "docs/IMPLEMENTER_QUICKSTART.md",
+      "bytes": 16805,
+      "sha256": "6c258d884b7e5203acffd7484d66c4df7688b298a8b40af513589b94cb8f316e"
+    },
+    {
+      "path": "docs/MIGRATION_2_3_TO_3_0.md",
+      "bytes": 13509,
+      "sha256": "9ecbce34f00a9af0f04756101dbaa5d7caecf2092f41624ac6880b30d301daf1"
+    },
+    {
+      "path": "docs/OPERATIONS.md",
+      "bytes": 23951,
+      "sha256": "3f537dc439bf916fefeb4c3c4787dfff63018e3c93259bb8248511ab4db705a2"
+    },
+    {
+      "path": "docs/OPTIONAL_PROFILES.md",
+      "bytes": 27116,
+      "sha256": "84572d33100e33fe798c1deb67928081678d649687cdcea9b3ace2713c5208fb"
+    },
+    {
+      "path": "docs/PARAMETER_CATALOG.json",
+      "bytes": 424410,
+      "sha256": "112b86a31ed1f07147d2b5b6e88314ad6fbc9311b74dba9a48de70ccefa2d141"
+    },
+    {
+      "path": "docs/PARAMETER_REFERENCE.en.md",
+      "bytes": 81519,
+      "sha256": "5a5942f10b8a2195cc31f22a10852048855e55e4369db0c41c3085b95734859d"
+    },
+    {
+      "path": "docs/PARAMETER_REFERENCE.ja.md",
+      "bytes": 83147,
+      "sha256": "dff4af5bf82af46c49c915a8cb2c84be5b738987e1dcb1d926c98773bf4a2a10"
+    },
+    {
+      "path": "docs/REFERENCE_IMPLEMENTATION.md",
+      "bytes": 30817,
+      "sha256": "e59a55be2cb151289f2b90787647057031cd450e9c1fb4125890f03fffd86de6"
+    },
+    {
+      "path": "docs/RELEASE_READINESS.md",
+      "bytes": 6881,
+      "sha256": "1decadc4cbdd26adcfcff39d4b908dc9a3f6c11990ef8404c08a6dabecf4bf1a"
+    },
+    {
+      "path": "docs/SOURCE_ATTRIBUTION.md",
+      "bytes": 4094,
+      "sha256": "174deb10c0c90bc555600ec5ae10a9a74fdac45d4ac96d440685295f279ea076"
+    },
+    {
+      "path": "ostf3.py",
+      "bytes": 46576,
+      "sha256": "afce3c15f40f7171df72a00607a6c45ba49c103896d7ba80f16d453b93e1b2d8"
+    },
+    {
+      "path": "ostf3_edit.py",
+      "bytes": 9154,
+      "sha256": "99ea35f1c004cf34be8e2891826dfaed16f00322bdc282b73c21d6802cb15eb2"
+    },
+    {
+      "path": "ostf3_migrate.py",
+      "bytes": 30773,
+      "sha256": "a8bded2aa8a0444f6f15e6b1734142f0247a46e1fe70988cb0c6532ad3f2c5f7"
+    },
+    {
+      "path": "ostf3_operations.py",
+      "bytes": 26463,
+      "sha256": "fbab8c4a5f5ca60c096b2f480d8e76cbe62665595787be6d1e379086adb0ef5a"
+    },
+    {
+      "path": "ostf3_validate.py",
+      "bytes": 4334,
+      "sha256": "8dcddd52bad302f322e16a63ae3466b3387f49a6d388d5d3687bf56a3eb1fc2d"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 89,
+      "sha256": "9b242c76f94efcef5e61e2cf1f755614580390acc8590aa5c095d2d54356d4bf"
+    },
+    {
+      "path": "samples/01_four_part_sketch.ostf",
+      "bytes": 11850,
+      "sha256": "23b5025144d2a403a1071e392684b1377fdab297586ad86356a7fef7567fff7d"
+    },
+    {
+      "path": "samples/02_empty_sketch.ostf",
+      "bytes": 573,
+      "sha256": "c48931b64c3e1624200cad6bc3969b99876fe3542a425f82674b385ec7d0b682"
+    },
+    {
+      "path": "samples/03_harmony_only.ostf",
+      "bytes": 977,
+      "sha256": "3ff9ac76b4f72d1d56411429a156540c761843fcf4d9651c9404b014d470a494"
+    },
+    {
+      "path": "samples/04_melody_only.ostf",
+      "bytes": 1446,
+      "sha256": "d75199fc3cfbbc02f8e151ab7614bebbb07b3105d2ddb3c2734387401d55fe5e"
+    },
+    {
+      "path": "samples/05_lyrics_only.ostf",
+      "bytes": 986,
+      "sha256": "cf8a5afa2fa83dfcfa225ef5cfa427b0deb5e2d9034d9028743f1ef196a87234"
+    },
+    {
+      "path": "samples/06_percussion_slots.ostf",
+      "bytes": 2014,
+      "sha256": "6643c6ee8d9016c422da3a2caabe23ea8d73df3ae06150260c4b115b10ac8931"
+    },
+    {
+      "path": "samples/07_septuplets.ostf",
+      "bytes": 1836,
+      "sha256": "b9e535f1a43e6858b049bee9bc52234c8d37603b5806bc70d6d83f74aca0a311"
+    },
+    {
+      "path": "samples/08_pickups_tails.ostf",
+      "bytes": 1267,
+      "sha256": "98ac1d49656e7602484bf09bbf559159e9a7afa8902a4d7bdc48e5bf4e89cacf"
+    },
+    {
+      "path": "samples/09_same_pitch_overlap.ostf",
+      "bytes": 1528,
+      "sha256": "76a3fc06e327ef8df9d634c01c3a1eee1ab4ee7e28959db78be423ad9eb5c91f"
+    },
+    {
+      "path": "samples/10_enabled_states.ostf",
+      "bytes": 1695,
+      "sha256": "3d6f195ada32487bd4f41359cc96e58ba9737720cc37255d4346783ad5cdffcc"
+    },
+    {
+      "path": "samples/11_meter_tempo_gaps.ostf",
+      "bytes": 1435,
+      "sha256": "06b70839a365b0fbbfbc341f1cf4f30c65a5e054022f9aad6a2764babb76676e"
+    },
+    {
+      "path": "samples/12_relative_chord.ostf",
+      "bytes": 2475,
+      "sha256": "bf4aee0f52f32e7b3fc17ef2f080207a862abd1f03ca3a11bb7b90745961f9da"
+    },
+    {
+      "path": "samples/13_relative_scale.ostf",
+      "bytes": 2497,
+      "sha256": "0b389377d3931ef43a1da39c3802e715821b46da6025bf1abb4b08209b0956f9"
+    },
+    {
+      "path": "samples/14_stale_source.ostf",
+      "bytes": 2462,
+      "sha256": "7ce1ed42ef75a07a53855167fecc15964e75676f9500d2833f59792bb5448737"
+    },
+    {
+      "path": "samples/15_unverified_source.ostf",
+      "bytes": 2472,
+      "sha256": "71ce87af47290ccc92623297002265a7699f5c5efb44899fa2a02f8152cd6713"
+    },
+    {
+      "path": "samples/16_generation_context.ostf",
+      "bytes": 3461,
+      "sha256": "000b293269cd27c4de8714da5a91959c01058ed182547ef5b54fa73467fbc596"
+    },
+    {
+      "path": "samples/17_appearance.ostf",
+      "bytes": 3694,
+      "sha256": "7fa5862800c848d11813dc9a608cb050f963847f5e986dcd4370a54ca7ef4f1c"
+    },
+    {
+      "path": "samples/18_opaque_precision.ostf",
+      "bytes": 1048,
+      "sha256": "49c30e89ba4ce466b6ec42096477a8d6a2898333af8e327d63a285b9df658830"
+    },
+    {
+      "path": "samples/19_future_profile.ostf",
+      "bytes": 1880,
+      "sha256": "10d29b0a9da712ffc242ded509432d3fef78ed591a1d470bc879c3d900d5c62b"
+    },
+    {
+      "path": "samples/20_lyric_alignment.ostf",
+      "bytes": 2179,
+      "sha256": "893f5ed960aa9abe08e957e1724f072c5c36d0762705831ee74d508f83914b77"
+    },
+    {
+      "path": "samples/21_integer_boundary.ostf",
+      "bytes": 962,
+      "sha256": "2d2affc74d5dd9634f460c64100272085a7caea3f213ea45510192665e39ef85"
+    },
+    {
+      "path": "samples/22_phrase_library.ostf",
+      "bytes": 2957,
+      "sha256": "30108771b83f31fceb54a94a27188c2537482fe8c1c0c2e257827e6169d60265"
+    },
+    {
+      "path": "samples/23_phrase_percussion.ostf",
+      "bytes": 2347,
+      "sha256": "c8ae351bb209362d1a987fc573f756484d58ddd4f44b9fd4f700a5c8772d0a90"
+    },
+    {
+      "path": "samples/24_phrase_late_overlap.ostf",
+      "bytes": 2916,
+      "sha256": "9a6123bb2fafbc57940410f1b988f1382827f6501b17c908091173dd8b4fe28d"
+    },
+    {
+      "path": "samples/25_choice_shared_muted.ostf",
+      "bytes": 2875,
+      "sha256": "d2ba0c66588a71bbb3c143d0a5a2602d34d4997c9afde9c22570665b3807bcaa"
+    },
+    {
+      "path": "samples/26_choice_none.ostf",
+      "bytes": 2847,
+      "sha256": "83518ac8a7964c5a05786b2b0560544ef1256b714238b9246252914e4229c445"
+    },
+    {
+      "path": "samples/27_stale_optional_profiles.ostf",
+      "bytes": 3495,
+      "sha256": "638b2942991e4aa4e48d502e0ba168436ab42d88e360070ebf9fc30552345885"
+    },
+    {
+      "path": "samples/28_empty_optional_profiles.ostf",
+      "bytes": 1040,
+      "sha256": "733d646ef719fdd566bbf1bde4f90f1ec84d3ceead626f19baa69a8685a87aeb"
+    },
+    {
+      "path": "samples/29_future_optional_profiles.ostf",
+      "bytes": 2014,
+      "sha256": "3b1e572b932450c18080f08444a6035e4b6bf2d8b67d0a4685c36f25be537a81"
+    },
+    {
+      "path": "samples/30_template_before_materialization.ostf",
+      "bytes": 1419,
+      "sha256": "6a8d337fc32d8633651323630085a75f9c208c797bb1c82f2fcc2952d00ecfd0"
+    },
+    {
+      "path": "samples/31_linked_phrase_before.ostf",
+      "bytes": 6575,
+      "sha256": "60c4f69d97b44fea5fbbb001119c582a2ec319e3b578320c9685281cf29de3f0"
+    },
+    {
+      "path": "samples/32_replaced_phrase_after.ostf",
+      "bytes": 8058,
+      "sha256": "4716795bcb67ce1252286afc675c854aef7b0d202d00c389e6f02425b4cd7fea"
+    },
+    {
+      "path": "samples/33_detached_manual_after.ostf",
+      "bytes": 5756,
+      "sha256": "6fab8eee12f2bbc187bf0f03fa862b8884e4d9dad236a491112f54c26631bf36"
+    },
+    {
+      "path": "samples/34_all_core_fields.ostf",
+      "bytes": 4170,
+      "sha256": "f15ada75ed71c907898d85f45616d11df1126d6f3b4c9ad0d4931f2b87c9194f"
+    },
+    {
+      "path": "samples/35_pitch_class_spellings.ostf",
+      "bytes": 12390,
+      "sha256": "a5bd57b7a8b75280973a6482254a3de3a8a0b67eecf529de307ef460def2076e"
+    },
+    {
+      "path": "samples/36_all_meter_denominators.ostf",
+      "bytes": 1106,
+      "sha256": "4bd6d1fddb3d3bc7b8a3fac7fa4d2c6196bdec32c5b090b50a3a056e4d9a0081"
+    },
+    {
+      "path": "samples/37_resource_kinds.ostf",
+      "bytes": 1203,
+      "sha256": "80e8eafff61aeca2d623bedfa23a16722d82cf0dab7de4582841c13ffa40d672"
+    },
+    {
+      "path": "samples/38_dependency_scopes.ostf",
+      "bytes": 5989,
+      "sha256": "f59c2b9a0f5fb28f47bf409f1a9aa117e8d552c276a9637f21647f2a21d36b7a"
+    },
+    {
+      "path": "samples/39_relative_objects.ostf",
+      "bytes": 2675,
+      "sha256": "dca043440a37f3e9fa164ba42b2e386e2ce4546514dacdc0c5f3a950a7f5e793"
+    },
+    {
+      "path": "samples/40_relative_interval_limits.ostf",
+      "bytes": 3282,
+      "sha256": "c5bd9e341ed122681fd9ee27eec0ce9516fe826516fca16b8926b73d5e3c8b69"
+    },
+    {
+      "path": "samples/41_generation_all_ref_types.ostf",
+      "bytes": 11311,
+      "sha256": "6b6286b3bf0420491d68f5cf7226725e48d99159264b025a0b69c44cd4644875"
+    },
+    {
+      "path": "samples/42_generation_protected_range.ostf",
+      "bytes": 2940,
+      "sha256": "486d5c2e468bc298397ffd42fa6d07519d1387f4db5ad1087a5393622c388ad1"
+    },
+    {
+      "path": "samples/43_appearance_all_targets.ostf",
+      "bytes": 8121,
+      "sha256": "4c2e911c2808bc09e80d1ec06690c45e760c6013c3d382ca6a72c8eaf8174393"
+    },
+    {
+      "path": "samples/44_appearance_inheritance.ostf",
+      "bytes": 3312,
+      "sha256": "82da5a5c3b4943ad239cc58fd29b21e7064bf4901c00e80633250ce767b3e4d3"
+    },
+    {
+      "path": "samples/45_legacy_import_archive.ostf",
+      "bytes": 4809,
+      "sha256": "ca36eb2d5a090a91c14085a2c4477011cf1b5b31e4c5b21065d2a049132242b6"
+    },
+    {
+      "path": "samples/46_lyrics_multilingual.ostf",
+      "bytes": 3023,
+      "sha256": "93ce32489dd34e5ac6b16e81640a0b8e8ac3bc80f7ce7afaca5d4f293158fc0e"
+    },
+    {
+      "path": "samples/47_pitch_boundaries.ostf",
+      "bytes": 1304,
+      "sha256": "16eec5f45b1c4e4ad6b6b1dbe898d55a923470e88147c5411171a3de140f3204"
+    },
+    {
+      "path": "samples/48_ppq_minimum.ostf",
+      "bytes": 1088,
+      "sha256": "0f84ce577dc2ff021bb98a8467c4d3c62980a480eeb960e73f8c145aef677f30"
+    },
+    {
+      "path": "samples/49_ppq_maximum.ostf",
+      "bytes": 977,
+      "sha256": "9426f9fa34c18385e96e715441896e44a7be71a12ee60327ef925394d32ed312"
+    },
+    {
+      "path": "samples/50_optional_empty_strings.ostf",
+      "bytes": 5219,
+      "sha256": "54b28b52c7b9b110f22dc445eb64d7306e5a0f64d8779041e84a789b1f42527b"
+    },
+    {
+      "path": "samples/51_opaque_json_values.ostf",
+      "bytes": 2890,
+      "sha256": "ce9c3e280e219999027b51b3b985092a0ea400c639008cea15990b062581e681"
+    },
+    {
+      "path": "samples/52_stale_missing_references.ostf",
+      "bytes": 4604,
+      "sha256": "7ec686b3435bca7aced4bda17bf40300dc5865a18ba801f522fe7c98bd342682"
+    },
+    {
+      "path": "samples/53_phrase_empty_template.ostf",
+      "bytes": 1496,
+      "sha256": "654151770ce996208b453d454dce313bc88946a099f2a08699512a319245542b"
+    },
+    {
+      "path": "samples/54_phrase_objects_dependencies.ostf",
+      "bytes": 2758,
+      "sha256": "f5ca55cad0d847ab639e18cddc0da670f95910be3d15fc32b28c6493cf2a4d5e"
+    },
+    {
+      "path": "samples/55_choice_empty_candidate.ostf",
+      "bytes": 2961,
+      "sha256": "03bee5767c1af7da01b7f0bbe81e8b25e72073492d6046fa597135f3321d8fba"
+    },
+    {
+      "path": "samples/56_choice_disjoint_groups.ostf",
+      "bytes": 3435,
+      "sha256": "496fccdc1c0071797574b828e68797cbac2c9d8ecd55f62bf6661b7c9670511a"
+    },
+    {
+      "path": "samples/57_choice_objects_dependencies.ostf",
+      "bytes": 3143,
+      "sha256": "db1a44aaf35451672003a1a0096588a4e08974b2ab4aa47745ad06be1605f762"
+    },
+    {
+      "path": "samples/58_complete_workflow.ostf",
+      "bytes": 12919,
+      "sha256": "7e540a418970f95e84d938405cdfcc929aee6286419d3bf95ea2336f96ad082d"
+    },
+    {
+      "path": "samples/59_phrase_transpose_limits.ostf",
+      "bytes": 2914,
+      "sha256": "94f4ab3012f0c97234be9a0421e9bdd1364f9a13b625e7ffa68a8fc4a96075f6"
+    },
+    {
+      "path": "samples/60_song_form_arrangement.ostf",
+      "bytes": 21714,
+      "sha256": "860461fb3fa8cb853d09298886ec2958ab81e3397d772e1e8875a8eeb8079cd6"
+    },
+    {
+      "path": "samples/INDEX.md",
+      "bytes": 26297,
+      "sha256": "a708536708c75b46abf6a40ca20b2e224aad383920dcd293ff1c764c9daba368"
+    },
+    {
+      "path": "samples/catalog.json",
+      "bytes": 260668,
+      "sha256": "a44ed4054feb714cdcccfb78f85e7a6db7db0100048faf1cc0905a622f30bc1b"
+    },
+    {
+      "path": "samples/legacy_2_3/29_lyrics_alignment.ostf",
+      "bytes": 1239,
+      "sha256": "34887f5b5910a19a24ec61af202fb10d5ecba9f6c57a784b148144bb3039b188"
+    },
+    {
+      "path": "samples/legacy_2_3/54_full_feature.ostf",
+      "bytes": 2895,
+      "sha256": "cf8a24d487c7f09b390f946839cb08d08be7d566428dda12ec556326240bca64"
+    },
+    {
+      "path": "schema/ostf-3.0.0-draft.1.schema.json",
+      "bytes": 26004,
+      "sha256": "844f6c3276b359e4911fbe790b8cd4d207afe1178eca0a8f030ac23bb74afe10"
+    },
+    {
+      "path": "schema/ostf-3.0.0-draft.2.schema.json",
+      "bytes": 30970,
+      "sha256": "4f1a39dd1c596e0564dcd94faa904dd059cac0a258b587fb716dab72a7e1385e"
+    },
+    {
+      "path": "schema/ostf-3.0.0.schema.json",
+      "bytes": 30985,
+      "sha256": "a2d828c928ab6654a925f845359614f274bf5b3e948f2d5ff0dc5020a121b263"
+    },
+    {
+      "path": "tools/build_reference.py",
+      "bytes": 56566,
+      "sha256": "b98a9f5cc2419094d946592a11d2dba015265436f1b472c6e60ddba288f19d45"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "An explicit choice with a shared clip and a muted parent"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "choice-bass",
+      "name": "Muted bass",
+      "clips": [
+        {
+          "id": "bass-common",
+          "start": 0,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "common-note",
+              "start": 0,
+              "duration": 960,
+              "pitch": 36
+            }
+          ],
+          "enabled": true
+        }
+      ],
+      "enabled": false
+    },
+    {
+      "id": "choice-pads",
+      "name": "Pads and an unmanaged note",
+      "clips": [
+        {
+          "id": "pad-a",
+          "start": 0,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "pad-a-note",
+              "start": 0,
+              "duration": 480,
+              "pitch": 60
+            }
+          ],
+          "enabled": true
+        },
+        {
+          "id": "pad-b",
+          "start": 0,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "pad-b-note",
+              "start": 0,
+              "duration": 480,
+              "pitch": 67
+            }
+          ],
+          "enabled": false
+        },
+        {
+          "id": "unmanaged-clip",
+          "start": 960,
+          "duration": 240,
+          "notes": [
+            {
+              "id": "unmanaged-note",
+              "start": 0,
+              "duration": 240,
+              "pitch": 72
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.clip-choices.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "groups": [
+          {
+            "id": "main-choice",
+            "name": "Pad alternatives",
+            "selectedCandidateId": "choice-a",
+            "candidates": [
+              {
+                "id": "choice-a",
+                "clipIds": [
+                  "bass-common",
+                  "pad-a"
+                ]
+              },
+              {
+                "id": "choice-b",
+                "clipIds": [
+                  "bass-common",
+                  "pad-b"
+                ]
+              },
+              {
+                "id": "silence",
+                "clipIds": []
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

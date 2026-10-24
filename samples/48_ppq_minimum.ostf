@@ -1,0 +1,64 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 1,
+  "song": {
+    "title": "Minimum PPQ and one-tick gates"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 1000
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 1,
+        "denominator": 1
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "track-ppq-min",
+      "name": "Lead",
+      "clips": [
+        {
+          "id": "clip-ppq-min",
+          "start": 0,
+          "duration": 2,
+          "notes": [
+            {
+              "id": "ppq-min-a",
+              "start": 0,
+              "duration": 1,
+              "pitch": 60
+            },
+            {
+              "id": "ppq-min-b",
+              "start": 1,
+              "duration": 1,
+              "pitch": 62
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {}
+}

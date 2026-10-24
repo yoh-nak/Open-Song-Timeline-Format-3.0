@@ -1,0 +1,137 @@
+{
+  "format": "OSTF",
+  "version": "3.0.0",
+  "ppq": 960,
+  "song": {
+    "title": "Late starts and overlapping same-pitch gates across repetitions"
+  },
+  "timeline": {
+    "sections": [],
+    "tempoChanges": [
+      {
+        "at": 0,
+        "bpm": 120
+      }
+    ],
+    "meterChanges": [
+      {
+        "at": 0,
+        "numerator": 4,
+        "denominator": 4
+      }
+    ]
+  },
+  "harmony": {
+    "chords": [],
+    "scales": []
+  },
+  "tracks": [
+    {
+      "id": "late-track",
+      "name": "Sustained phrase",
+      "clips": [
+        {
+          "id": "late-clip",
+          "start": 0,
+          "duration": 960,
+          "notes": [
+            {
+              "id": "held-0",
+              "start": 0,
+              "duration": 960,
+              "pitch": 60
+            },
+            {
+              "id": "held-1",
+              "start": 480,
+              "duration": 960,
+              "pitch": 60
+            },
+            {
+              "id": "late-0",
+              "start": 600,
+              "duration": 120,
+              "pitch": 60
+            },
+            {
+              "id": "late-1",
+              "start": 1080,
+              "duration": 120,
+              "pitch": 60
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "soundSlots": [],
+  "lyrics": {
+    "documents": [],
+    "phrases": [],
+    "units": [],
+    "alignments": []
+  },
+  "resources": [],
+  "extensions": {
+    "org.ostf.phrase-library.v1": {
+      "version": "1.0.0-draft.1",
+      "status": "current",
+      "dependencies": {
+        "scope": "document"
+      },
+      "data": {
+        "templates": [
+          {
+            "id": "late-template",
+            "duration": 480,
+            "notes": [
+              {
+                "id": "held",
+                "start": 0,
+                "duration": 960,
+                "pitch": 60
+              },
+              {
+                "id": "late",
+                "start": 600,
+                "duration": 120,
+                "pitch": 60
+              }
+            ]
+          }
+        ],
+        "instances": [
+          {
+            "id": "late-instance",
+            "templateId": "late-template",
+            "clipId": "late-clip",
+            "repeatCount": 2,
+            "transpose": 0,
+            "noteMap": [
+              {
+                "templateNoteId": "held",
+                "repeatIndex": 0,
+                "noteId": "held-0"
+              },
+              {
+                "templateNoteId": "late",
+                "repeatIndex": 0,
+                "noteId": "late-0"
+              },
+              {
+                "templateNoteId": "held",
+                "repeatIndex": 1,
+                "noteId": "held-1"
+              },
+              {
+                "templateNoteId": "late",
+                "repeatIndex": 1,
+                "noteId": "late-1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
